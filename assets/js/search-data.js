@@ -56,7 +56,7 @@ ninja.data = [{
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/students/";
+                window.location.href = "/people/";
               },
             },{id: "dropdown-alumni",
               title: "Alumni",
