@@ -3,7 +3,7 @@ layout: profiles
 permalink: /people/
 title: People
 description: members of the lab
-nav: true
+nav: false
 nav_order: 6
 _styles: >
   .profile .more-info p { font-size: 1.2rem; line-height: 1.3; }
