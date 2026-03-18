@@ -3,7 +3,7 @@ layout: page
 title: Research Fields
 permalink: /research-fields/
 nav: true
-nav_order: 4
+nav_order: 2
 _styles: >
   .rf-wrap {
     display: grid;
