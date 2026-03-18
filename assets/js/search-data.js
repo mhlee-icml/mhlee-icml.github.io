@@ -9,12 +9,12 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
-          title: "Publications",
+  },{id: "nav-research-fields",
+          title: "Research Fields",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/publications/";
+            window.location.href = "/research-fields/";
           },
         },{id: "nav-projects",
           title: "Projects",
@@ -23,12 +23,26 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-research-fields",
-          title: "Research Fields",
+        },{id: "nav-publications",
+          title: "Publications",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/research-fields/";
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-videos",
+          title: "Videos",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/videos/";
+          },
+        },{id: "nav-people",
+          title: "People",
+          description: "members of the lab",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/people/";
           },
         },{id: "dropdown-professor",
               title: "Professor",
