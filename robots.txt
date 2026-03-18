@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://mhlee-imcl.github.io/sitemap.xml
+Sitemap: https://mhlee-icml.github.io/sitemap.xml
