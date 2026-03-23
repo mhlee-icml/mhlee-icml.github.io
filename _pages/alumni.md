@@ -18,4 +18,5 @@ profiles:
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>&#xAE40; &#xC2DC; &#xD604; / Sihyun Kim</p>
+      <p>💼 SECO / Humanoid Robotics (AI) R&D Lab.</p>
 ---
