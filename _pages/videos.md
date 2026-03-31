@@ -6,10 +6,6 @@ nav: true
 nav_order: 5
 ---
 
-This page contains videos and multimedia content from our lab.
-
-## Lab Video
-
 {% include video.liquid
   path="https://www.youtube.com/embed/7pcsYJiWP84"
   width="960"
