@@ -801,6 +801,30 @@
         "news": 2,
         "videos": 3
       }
+    },
+    {
+      "date": "2026-10-26",
+      "reason": "A new author.jpg portrait was supplied during the user profile addition and connected to the new graduate student profile.",
+      "person": "김형진 / Hyeongjin Kim",
+      "image": {
+        "original_path": "author.jpg",
+        "path": "assets/img/hj_kim.jpg",
+        "bytes": 140187,
+        "sha256": "50678373afaaf96305254027b7fba87ef31973c0f3522e3ea8b5c7e60a743f90",
+        "width": 413,
+        "height": 531
+      },
+      "note": "Renamed and moved without changing image bytes. Uses the shared 4:5 portrait presentation and same dimensions as other members.",
+      "current_counts": {
+        "images": 29,
+        "biographies": 5,
+        "registered_people": 5,
+        "graduate_students": 1,
+        "undergraduate_researchers": 3,
+        "alumni": 1,
+        "news": 2,
+        "videos": 3
+      }
     }
   ]
 }
