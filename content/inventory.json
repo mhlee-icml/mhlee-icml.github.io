@@ -773,6 +773,34 @@
         "news": 2,
         "videos": 3
       }
+    },
+    {
+      "date": "2026-10-26",
+      "reason": "User requested their profile as an integrated M.S.-Ph.D. student and supplied Hanyang University Electrical Engineering affiliation, public email and research interests.",
+      "person": "김형진 / Hyeongjin Kim",
+      "group": "graduate",
+      "role": "Integrated M.S.–Ph.D. Student",
+      "institution": "Hanyang University",
+      "department": "Department of Electrical Engineering",
+      "biography": "content/people/about_hj_kim.md",
+      "email": "ky942400@hanyang.ac.kr",
+      "research_interests": [
+        "Reinforcement Learning",
+        "Intelligent Manipulation",
+        "Intelligent Robotics"
+      ],
+      "image": null,
+      "note": "A Graduate students section precedes Undergraduate researchers. Hanyang affiliation is explicitly visible. No portrait was supplied, so the shared placeholder is used. Existing member order, biographies and image bytes remain unchanged.",
+      "current_counts": {
+        "images": 28,
+        "biographies": 5,
+        "registered_people": 5,
+        "graduate_students": 1,
+        "undergraduate_researchers": 3,
+        "alumni": 1,
+        "news": 2,
+        "videos": 3
+      }
     }
   ]
 }

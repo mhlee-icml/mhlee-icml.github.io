@@ -1,5 +1,16 @@
 [
   {
+    "group": "graduate",
+    "name": "김형진 / Hyeongjin Kim",
+    "role": "Integrated M.S.–Ph.D. Student",
+    "status": "current",
+    "institution": "Hanyang University",
+    "department": "Department of Electrical Engineering",
+    "department_ko": "전기공학과",
+    "image": null,
+    "biography": "content/people/about_hj_kim.md"
+  },
+  {
     "group": "undergraduate",
     "name": "김예훈",
     "role": "Undergraduate Researcher",

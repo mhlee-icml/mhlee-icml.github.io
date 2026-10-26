@@ -6,9 +6,11 @@ layout: default
 <nav class="subnav" aria-label="People"><a href="{{ '/people/' | relative_url }}"{% if page.url == '/people/' %} aria-current="page"{% endif %}>People</a><a href="{{ '/professor/' | relative_url }}">Professor</a><a href="{{ '/alumni/' | relative_url }}"{% if page.url == '/alumni/' %} aria-current="page"{% endif %}>Alumni</a></nav>
 {% unless page.url == '/alumni/' %}
 <section class="people-section"><h2>Principal investigator</h2><article class="person-card professor-card"><img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Myoung Hoon Lee" width="342" height="437"><div><span class="eyebrow">ASSISTANT PROFESSOR</span><h3><a href="{{ '/professor/' | relative_url }}">Myoung Hoon Lee</a></h3><p>Department of Electrical Engineering<br>Incheon National University</p><a href="mailto:mh.lee@inu.ac.kr">mh.lee@inu.ac.kr</a><p><a class="text-link" href="{{ '/professor/' | relative_url }}">Profile & curriculum vitae <span aria-hidden="true">→</span></a></p></div></article></section>
+{% assign graduates = lab.people | where: 'group', 'graduate' %}
+{% if graduates.size > 0 %}<section class="people-section"><h2>Graduate students</h2><div class="people-grid graduate-grid">{% for person in graduates %}{% include person.html person=person %}{% endfor %}</div></section>{% endif %}
 {% assign undergraduates = lab.people | where: 'group', 'undergraduate' %}
 {% if undergraduates.size > 0 %}<section class="people-section"><h2>Undergraduate researchers</h2><div class="people-grid undergraduate-grid">{% for person in undergraduates %}{% include person.html person=person %}{% endfor %}</div></section>{% endif %}
-{% assign students = lab.people | where_exp: 'person', 'person.group != "alumni" and person.group != "undergraduate"' %}
+{% assign students = lab.people | where_exp: 'person', 'person.group != "alumni" and person.group != "undergraduate" and person.group != "graduate"' %}
 {% if students.size > 0 %}<section class="people-section"><h2>Members</h2><div class="people-grid">{% for person in students %}{% include person.html person=person %}{% endfor %}</div></section>{% endif %}
 <aside class="home-join"><div><p class="eyebrow">JOIN ICML</p><h2>Interested in joining our lab?</h2><p>Explore graduate study and undergraduate research opportunities.</p></div><a class="button-link" href="{{ '/join-us/' | relative_url }}">Join Us →</a></aside>
 {% endunless %}

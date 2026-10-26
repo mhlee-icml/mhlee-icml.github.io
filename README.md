@@ -70,8 +70,8 @@ GitHub Pages 배포는 `.github/workflows/pages.yml`이 담당합니다. `main` 
 | [content/pages/professor.md](content/pages/professor.md) | 교수 소개, 학력·경력·강의·과제·논문·특허·학술활동·수상 원문 |
 | [content/pages/research-fields.md](content/pages/research-fields.md) | 연구 분야 3개, 설명과 연구 이미지 10개의 연결 |
 | [content/pages/join-us.md](content/pages/join-us.md) | 대학원 진학·학부연구 참여 모집과 연구실 홍보, 교수 이메일 문의 안내 |
-| [content/people.json](content/people.json) | 현재 학부연구생 3명과 졸업생 1명의 이름·소속 학과·사진·소개 연결 |
-| [content/people/](content/people/) | 김예훈·길순형·장윤서 소개 각 1개와 졸업생 소개 1개 |
+| [content/people.json](content/people.json) | 현재 대학원생 1명·학부연구생 3명과 졸업생 1명의 이름·소속·사진·소개 연결 |
+| [content/people/](content/people/) | 김형진·김예훈·길순형·장윤서 소개 각 1개와 졸업생 소개 1개 |
 | [content/news/](content/news/) | KAIST Mobility Challenge 대상 브릿지경제 보도와 RoboCup 2026 SML 우승 중앙일보 보도 |
 | [content/videos.json](content/videos.json) | 연구 영상 3개의 YouTube 주소·제목·캡션 |
 | [content/platforms.json](content/platforms.json) | 홈 연구 플랫폼 5개의 사진·설명·기술 또는 연구 분야·영상 이동 링크와 제공 원문·근거 |
@@ -93,6 +93,8 @@ GitHub Pages 배포는 `.github/workflows/pages.yml`이 담당합니다. `main` 
 ERP-42와 Smart Stroller의 두 문장 설명과 **Core technology**는 사용자가 제공한 내용을 반영했고, 제공 원문 전체는 `content/platforms.json`의 `source_details`에 보존합니다. 다른 플랫폼의 **Research focus**는 기존 연구 소개·관련 영상·제공 사진을 근거로 합니다. 드론의 관련 UAV 연구 설명은 사진 속 실험 장치에 특정 논문 알고리즘을 적용했다는 주장이 아니며, 세부 근거는 `source_notes`에 기록합니다.
 
 교수·연구 소개는 글과 의미 있는 HTML 구조를 유지하면서 테마의 CSS, 클래스, Liquid 표현식과 표시 설정을 제거했습니다. 이미지 경로와 대체 텍스트, 이메일 링크, 모든 문구와 목록 순서를 보존했습니다. 홈 본문은 원래 비어 있었으며 연구실 전체 명칭과 홈 이미지 연결은 `site.json`에 있습니다.
+
+김형진 / Hyeongjin Kim은 **Graduate students** 구역의 **Integrated M.S.–Ph.D. Student**로 표시합니다. 소속은 **Hanyang University · Department of Electrical Engineering**, 공개 이메일은 `ky942400@hanyang.ac.kr`, 연구 관심분야는 Reinforcement Learning / Intelligent Manipulation / Intelligent Robotics입니다. 소개 원본은 `content/people/about_hj_kim.md`이며 제공된 사진이 없어 다른 프로필과 같은 크기의 자리표시자를 사용합니다. 대학원생 구역은 교수 소개 다음, 학부연구생 구역 앞에 배치합니다.
 
 사용자 확인에 따라 학부연구생은 **김예훈 → 길순형 → 장윤서** 순서의 현재 참여 구성원(`status: current`)입니다. 김예훈·길순형은 전기공학과(Department of Electrical Engineering), 장윤서는 임베디드 시스템 공학과(Department of Embedded Systems Engineering)로 표시합니다. 김예훈은 `yh_kim.jpg`와 `content/people/about_yh_kim.md`를 연결했습니다. 장윤서는 `ys_jang.jpg`와 `content/people/about_ys_jang.md`에 이메일 `jyoonseo45@gmail.com`, 관심분야 Robot Control / Robot Manipulators / Robot Path Planning을 연결했습니다. 길순형은 `content/people/about_sh_kil.md`에 이메일 `kilsh1210@inu.ac.kr`, 관심분야 Drone Swarm Control / Reinforcement Learning을 연결했습니다. 길순형의 사진은 사용자 제공 파일 `자연스러운 고해상도 인물 사진 복원.png`를 원본 내용 그대로 `sh_kil.png`로 정리해 연결했습니다. 다른 구성원과 같은 크기와 4:5 표시 비율을 사용합니다. 모든 프로필 이메일은 클릭 가능한 메일 링크입니다. 졸업생의 기존 연결은 유지합니다.
 
