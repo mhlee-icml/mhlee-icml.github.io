@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% assign lab = site.data.lab %}
+<header class="page-heading"><p class="eyebrow">RESEARCH / PUBLICATIONS</p><h1 class="page-title">Publications</h1></header>
+<section class="prose selected-publications"><h2>Selected publications</h2><ol>{% for paper in lab.selected_publications %}<li>{{ paper.html }}</li>{% endfor %}</ol></section>
+<section class="prose full-publications" aria-labelledby="full-list-heading"><h2 id="full-list-heading">Full publication list</h2>
+  <div class="publication-tools"><label for="publication-search">Search publications</label><input class="search-input" id="publication-search" type="search" placeholder="Title, author, venue, or year" autocomplete="off"><p class="publication-count" aria-live="polite">30 publications</p></div>
+  <div class="publication-list">
+    {% for category in lab.publication_categories %}<details open><summary>{{ category.title }} <span class="category-count">{{ category.items | size }}</span></summary><ol>{% for paper in category.items %}<li>{{ paper.html }}</li>{% endfor %}</ol></details>{% endfor %}
+  </div>
+  <p class="empty-results" hidden>No publications match your search.</p>
+  <p><em>* indicates co-corresponding or co-first authorship as noted in each venue.</em></p>
+</section>

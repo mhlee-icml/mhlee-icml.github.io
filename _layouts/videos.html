@@ -1,0 +1,5 @@
+---
+layout: default
+---
+<header class="page-heading"><p class="eyebrow">RESEARCH IN MOTION</p><h1 class="page-title">Videos</h1><p class="page-intro">Autonomous driving and intelligent robot demonstrations.</p></header>
+<div class="video-grid">{% for video in site.data.lab.videos %}<figure class="video-card" id="video-{{ forloop.index }}"><div class="video-frame"><iframe src="{{ video.path }}" title="{{ video.title | escape }}" width="{{ video.width }}" height="{{ video.height }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><figcaption><span class="eyebrow">DEMONSTRATION 0{{ forloop.index }}</span><h2>{{ video.title }}</h2>{% if video.caption != video.title %}<p>{{ video.caption }}</p>{% endif %}<a class="text-link" href="{{ video.path | replace: '/embed/', '/watch?v=' }}">Watch on YouTube ↗</a></figcaption></figure>{% endfor %}</div>

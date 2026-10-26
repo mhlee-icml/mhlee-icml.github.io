@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{% assign item = site.data.lab.news | where: 'slug', page.news_slug | first %}
+<article class="news-article">
+  <a class="text-link" href="{{ '/news/' | relative_url }}">← All news</a>
+  <header class="page-heading"><p class="eyebrow">LAB NEWS</p><h1 class="page-title">{{ item.title }}</h1><div class="news-meta"><time datetime="{{ item.date }}">{{ item.display_date }}</time><span>{{ item.source }}</span></div></header>
+  {% if item.image %}<img class="news-image" src="{{ item.image | relative_url }}" alt="{{ item.title | escape }}">{% endif %}
+  <div class="prose">{{ item.html }}</div>
+  <aside class="source-note"><p class="eyebrow">ORIGINAL COVERAGE</p><p><a href="{{ item.source_url }}" lang="ko">{{ item.source_title }}</a></p><p>{{ item.source }} · Published <time datetime="{{ item.source_date }}">{{ item.source_date }}</time></p></aside>
+</article>

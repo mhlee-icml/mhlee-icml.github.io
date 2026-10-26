@@ -1,0 +1,124 @@
+[
+  {
+    "id": "erp42",
+    "title": "ERP-42",
+    "eyebrow": "AUTONOMOUS DRIVING",
+    "image": "/assets/img/erp42-autonomous-driving.webp",
+    "width": 1391,
+    "height": 1131,
+    "alt": "ERP-42 autonomous research vehicle equipped with multiple sensors",
+    "description": "We combine RTK-GNSS/IMU navigation with Pure Pursuit/PID control, route following, and vehicle–computer communication. Camera–3D LiDAR fusion supports object detection and obstacle avoidance, with field experiments at K-City.",
+    "highlights_label": "Core technology",
+    "highlights": [
+      "ROS 2",
+      "Velodyne VLP-16",
+      "RTK-GNSS + IMU",
+      "Camera–LiDAR fusion",
+      "Pure Pursuit + PID"
+    ],
+    "video_path": "/videos/#video-3",
+    "video_label": "Watch the research video",
+    "source_details": {
+      "provided_by": "user",
+      "provided_date": "2026-10-26",
+      "original_text": "erp는\nContributions\nIntegrated RTK-GNSS and IMU data for navigation and route following.\nDeveloped Pure Pursuit/PID vehicle control and communication between the vehicle and onboard computer.\nImplemented camera–3D LiDAR fusion for object detection and obstacle avoidance, with field experiments at K-City.\nCore technology\nROS 2\nVelodyne VLP-16\nCamera\nRTK-GNSS\nIMU\nPure Pursuit\nPID control"
+    }
+  },
+  {
+    "id": "mobile-manipulator",
+    "title": "Mobile Manipulator",
+    "eyebrow": "INTELLIGENT ROBOT CONTROL",
+    "image": "/assets/img/robocup-sml-mobile-manipulator.webp",
+    "width": 1254,
+    "height": 1254,
+    "alt": "Mobile robot with a mounted manipulator and gripper",
+    "description": "A mobile base and robotic arm combine navigation with manipulation on one platform. Our related demonstration presents autonomous navigation and task execution.",
+    "highlights_label": "Research focus",
+    "highlights": [
+      "AMR",
+      "Robotic arm",
+      "Navigation",
+      "Task execution"
+    ],
+    "video_path": "/videos/#video-2",
+    "video_label": "Related research video",
+    "source_notes": [
+      "The user-supplied image shows a mobile robot with a mounted manipulator and gripper.",
+      "content/videos.json includes 'Autonomous AMR-Manipulator System for Navigation and Task Execution' (https://www.youtube.com/embed/gFvEnQHWeL4). The link is labeled as related research rather than asserting that the pictured hardware is identical.",
+      "content/pages/research-fields.md describes research and implementation of intelligent control algorithms based on various robot platforms. No new funding, award, or performance claim is made."
+    ]
+  },
+  {
+    "id": "smart-stroller",
+    "title": "Smart Stroller",
+    "eyebrow": "FIELD DEMONSTRATION",
+    "image": "/assets/img/smart-stroller.webp",
+    "width": 4000,
+    "height": 3000,
+    "alt": "Outdoor demonstration area for the smart stroller project",
+    "description": "We integrate camera and 2D LiDAR sensing in a ROS 2 system. An Arduino handles low-level motor actuation, linking the sensing system with the stroller’s hardware.",
+    "highlights_label": "Core technology",
+    "highlights": [
+      "ROS 2",
+      "Camera",
+      "2D LiDAR",
+      "Arduino",
+      "Motor actuation"
+    ],
+    "video_path": "/videos/",
+    "video_label": "Browse research videos",
+    "source_details": {
+      "provided_by": "user",
+      "provided_date": "2026-10-26",
+      "original_text": "유모차는\nIntegrated camera and 2D LiDAR sensing in a ROS 2 system.\nUsed Arduino for low-level motor actuation.",
+      "video_routing_original": "유튜브 영상은 없는데, 비디오로 가게 만들면 될거같아."
+    }
+  },
+  {
+    "id": "quadruped-robot",
+    "title": "Quadruped Robot",
+    "eyebrow": "LEGGED ROBOTICS",
+    "image": "/assets/img/quadruped-robot.jpg",
+    "width": 4032,
+    "height": 3024,
+    "alt": "Quadruped robot standing in the laboratory",
+    "description": "A four-legged platform extends the lab’s experimental systems beyond wheeled robots. It introduces legged mobility alongside our broader work on intelligent control and learning for autonomous systems.",
+    "highlights_label": "Research focus",
+    "highlights": [
+      "Legged mobility",
+      "Quadruped platform",
+      "Robot control"
+    ],
+    "video_path": "/videos/",
+    "video_label": "Browse research videos",
+    "source_notes": [
+      "The user identified the supplied laboratory photo as a robot dog; its four-legged form is visible in the provided image.",
+      "content/pages/research-fields.md describes intelligent control research using robot platforms; content/pages/professor.md lists reinforcement learning and unmanned autonomous systems control as research fields. These describe broader research, not confirmed algorithms or demonstrated capabilities of this pictured quadruped.",
+      "The user stated that there is no dedicated YouTube video and authorized a general Videos-page link: 유튜브 영상은 없는데, 비디오로 가게 만들면 될거같아."
+    ]
+  },
+  {
+    "id": "drone-platform",
+    "title": "Drone Platform",
+    "eyebrow": "AERIAL ROBOTICS",
+    "image": "/assets/img/drone-platform.jpg",
+    "width": 4032,
+    "height": 3024,
+    "alt": "Quadrotor experimental platform with four guarded rotors on a laboratory bench",
+    "description": "A laboratory quadrotor test platform complements the lab’s broader aerial-robotics research. Related work explores UAV path planning, collision avoidance, and learning-based control.",
+    "highlights_label": "Research focus",
+    "highlights": [
+      "Quadrotor platform",
+      "Aerial robotics",
+      "UAV control"
+    ],
+    "video_path": "/videos/",
+    "video_label": "Browse research videos",
+    "source_notes": [
+      "The supplied image shows a laboratory quadrotor platform with four guarded rotors.",
+      "content/pages/research-fields.md includes reinforcement-learning-based SACHER work for UAV path planning and collision avoidance. content/pages/professor.md preserves related UAV and quadrotor publications.",
+      "The description distinguishes this photographed experimental platform from related research; it does not assert that a published algorithm has been implemented or validated on this hardware.",
+      "The user stated that there is no dedicated YouTube video and authorized a general Videos-page link: 유튜브 영상은 없는데, 비디오로 가게 만들면 될거같아."
+    ]
+  }
+]

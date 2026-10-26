@@ -1,0 +1,17 @@
+main:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research-fields/
+  - title: Publications
+    url: /publications/
+  - title: Projects
+    url: /projects/
+  - title: People
+    url: /people/
+  - title: News
+    url: /news/
+  - title: Videos
+    url: /videos/
+  - title: Join Us
+    url: /join-us/

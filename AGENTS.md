@@ -1,81 +1,16 @@
-# Agent Guidelines for al-folio
+# ICML 사이트 작업 지침
 
-A simple, clean, and responsive Jekyll theme for academics.
+이 저장소는 al-folio 테마를 폐기하고, 사용자가 선택한 Academic Pages를 연구실용으로 재구성하는 사이트입니다. 먼저 [README.md](README.md)와 [content/inventory.json](content/inventory.json)을 읽으세요.
 
-## Quick Links by Role
-
-- **Are you a coding agent?** → Read [`.github/copilot-instructions.md`](.github/copilot-instructions.md) first (tech stack, build, CI/CD, common pitfalls & solutions)
-- **Customizing the site?** → See [`.github/agents/customize.agent.md`](.github/agents/customize.agent.md)
-- **Writing documentation?** → See [`.github/agents/docs.agent.md`](.github/agents/docs.agent.md)
-- **Need setup/deployment help?** → [INSTALL.md](INSTALL.md)
-- **Troubleshooting & FAQ?** → [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
-- **Customization & theming?** → [CUSTOMIZE.md](CUSTOMIZE.md)
-- **Quick 5-min start?** → [QUICKSTART.md](QUICKSTART.md)
-
-## Essential Commands
-
-### Local Development (Docker)
-
-The recommended approach is using Docker.
-
-```bash
-# Initial setup & start dev server
-docker compose pull && docker compose up
-# Site runs at http://localhost:8080
-
-# Rebuild after changing dependencies or Dockerfile
-docker compose up --build
-
-# Stop containers and free port 8080
-docker compose down
-```
-
-### Pre-Commit Checklist
-
-Before every commit, you **must** run these steps:
-
-1.  **Format Code:**
-    ```bash
-    # (First time only)
-    npm install --save-dev prettier @shopify/prettier-plugin-liquid
-    # Format all files
-    npx prettier . --write
-    ```
-2.  **Build Locally & Verify:**
-
-    ```bash
-    # Rebuild the site
-    docker compose up --build
-
-    # Verify by visiting http://localhost:8080.
-    # Check navigation, pages, images, and dark mode.
-    ```
-
-## Critical Configuration
-
-When modifying `_config.yml`, these **must be updated together**:
-
-- **Personal site:** `url: https://username.github.io` + `baseurl:` (empty)
-- **Project site:** `url: https://username.github.io` + `baseurl: /repo-name/`
-- **YAML errors:** Quote strings with special characters: `title: "My: Cool Site"`
-
-## Development Workflow
-
-- **Git & Commits:** For commit message format and Git practices, see [.github/GIT_WORKFLOW.md](.github/GIT_WORKFLOW.md).
-- **Code-Specific Instructions:** Consult the relevant instruction file for your code type.
-
-| File Type                                     | Instruction File                                                                                |
-| --------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Markdown content (`_posts/`, `_pages/`, etc.) | [markdown-content.instructions.md](.github/instructions/markdown-content.instructions.md)       |
-| YAML config (`_config.yml`, `_data/`)         | [yaml-configuration.instructions.md](.github/instructions/yaml-configuration.instructions.md)   |
-| BibTeX (`_bibliography/`)                     | [bibtex-bibliography.instructions.md](.github/instructions/bibtex-bibliography.instructions.md) |
-| Liquid templates (`_includes/`, `_layouts/`)  | [liquid-templates.instructions.md](.github/instructions/liquid-templates.instructions.md)       |
-| JavaScript (`_scripts/`)                      | [javascript-scripts.instructions.md](.github/instructions/javascript-scripts.instructions.md)   |
-
-## Common Issues
-
-For troubleshooting, see:
-
-- [Common Pitfalls & Workarounds](.github/copilot-instructions.md#common-pitfalls--workarounds) in copilot-instructions.md
-- [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for detailed solutions
-- [GitHub Issues](https://github.com/alshedivat/al-folio/issues) to search for your specific problem.
+- 연구실 원문은 `content/`, 사진·로고·도표 원본은 `assets/img/`에 있습니다.
+- 기존 자료의 삭제, 임의 요약, 내용 수정 없이 새 사이트에 옮기세요. 사진 원본을 덮어쓰지 마세요. 단, 사용자가 명시한 삭제·수정은 반영하고 과거 보존 기록을 근거로 되돌리지 마세요.
+- 실제 논문·과제·강의 목록은 `content/pages/professor.md`에 있습니다. 예전 BibTeX와 프로젝트 모음은 데모였으므로 복구해 사용하지 마세요.
+- 현재 구성원은 `content/people.json`을 기준으로 사용하세요. 우진·다인·기현의 소개·사진은 사용자가 삭제했으므로 복구하거나 현재 프로필로 다시 등록하지 마세요. 과거 뉴스의 참가자 기록과 현재 구성원 목록을 구분하세요.
+- `content/people.json`의 남아 있는 이름·사진·소개 연결과 `content/videos.json`의 주소·캡션을 유지하세요.
+- 프로필 사진은 교수·학생·졸업생 모두 같은 크기와 4:5 표시 비율을 사용하세요. 교수 사진만 크게 만들지 마세요. 현재 공통 규격은 데스크톱 180×225px, 600px 이하 화면 120×150px이며 사진 없는 자리와 교수 상세 페이지에도 적용합니다.
+- 뉴스는 항상 README의 공통 형식을 따르세요. 파일명은 `YYYY-MM-DD-slug.md`, 날짜는 `YYYY-MM-DD`, 메타데이터 항목과 순서는 모든 뉴스에서 동일하게 유지하세요. 영어 요약 두 문단과 원문 링크로 작성하고 이미지가 없으면 `null`을 쓰세요.
+- 날짜·주소 불일치는 README에 기록되어 있습니다. 추측으로 고치지 마세요.
+- 사용자는 2026-10-26 Academic Pages 적용과 이에 필요한 Jekyll/Liquid 사용을 승인했습니다. Academic Pages 기반 구현은 허용하되, 폐기한 al-folio 및 데모 자료를 복구하지 마세요.
+- 기술 스택과 실행·검증·배포 명령은 실제 구현에 맞춰 README에 기록하세요. 로컬 시안 작업은 원격 배포를 허가하지 않습니다.
+- 변경 후 콘텐츠와 이미지 연결을 확인하고 변경 범위에 맞는 검증을 수행하세요. `inventory.json`은 정리 시점의 보존 기록입니다.
+- Git 이력과 사용자의 작업을 보존하고 요청 없이 커밋·푸시·배포하지 마세요.

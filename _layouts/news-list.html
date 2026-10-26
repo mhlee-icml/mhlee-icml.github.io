@@ -1,0 +1,6 @@
+---
+layout: default
+---
+{% assign lab = site.data.lab %}
+<header class="page-heading"><p class="eyebrow">FROM THE LAB</p><h1 class="page-title">News</h1><p class="page-intro">Research achievements and news from ICML.</p></header>
+<div class="news-list news-archive">{% for item in lab.news %}<article class="news-row"><time datetime="{{ item.date }}">{{ item.display_date }}</time><div><h2><a href="{{ item.path | relative_url }}">{{ item.title }}</a></h2><p class="news-source">{{ item.source }}</p>{% if item.image %}<a href="{{ item.path | relative_url }}" tabindex="-1" aria-hidden="true"><img class="news-thumbnail{% if item.slug == '2026-02-10-kaist-mobility-challenge' %} news-thumbnail--kaist{% endif %}" src="{{ item.image | relative_url }}" alt="" loading="lazy" width="620" height="350"></a>{% endif %}<a class="text-link" href="{{ item.path | relative_url }}">Read the news →</a></div></article>{% endfor %}</div>

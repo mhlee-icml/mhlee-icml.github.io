@@ -1,0 +1,8 @@
+{% assign lab = site.data.lab %}
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div><a href="{{ '/' | relative_url }}" class="footer-name">ICML Lab</a><p>{{ lab.site.full_name }}</p></div>
+    <div class="footer-contact"><span class="eyebrow">{{ lab.site.contact_footer.heading }}</span>{% for line in lab.site.contact_footer.lines %}<p>{{ line | escape }}</p>{% endfor %}</div>
+    <div class="footer-credit"><p>Incheon National University</p><p>Design adapted from <a href="https://github.com/hongsheng-Z/academicpages.github.io">Academic Pages</a>.</p></div>
+  </div>
+</footer>

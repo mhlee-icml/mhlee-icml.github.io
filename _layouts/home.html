@@ -1,0 +1,81 @@
+---
+layout: default
+---
+{% assign lab = site.data.lab %}
+<header class="home-intro">
+  <p class="eyebrow">INCHEON NATIONAL UNIVERSITY · ELECTRICAL ENGINEERING</p>
+  <h1>Intelligent Control &<br>Machine Learning <span>Lab.</span></h1>
+  <p class="home-lead">Optimal control. Reinforcement learning. Autonomous systems.</p>
+  <a class="text-link" href="{{ '/research-fields/' | relative_url }}">Discover our research <span aria-hidden="true">↗</span></a>
+</header>
+<section class="hero-figure hero-carousel" data-carousel aria-roledescription="carousel" aria-label="Research platforms">
+  <div class="hero-carousel-viewport" id="research-carousel-viewport" data-carousel-viewport tabindex="-1">
+    <div class="hero-carousel-track" data-carousel-track>
+      {% for platform in lab.platforms %}
+      <article class="hero-slide" data-carousel-slide data-carousel-title="{{ platform.title | escape }}" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ forloop.length }}: {{ platform.title | escape }}">
+        <div class="hero-project">
+          <div class="hero-project-media"><img src="{{ platform.image | relative_url }}" alt="{{ platform.alt | escape }}" width="{{ platform.width }}" height="{{ platform.height }}" {% if forloop.first %}fetchpriority="high"{% else %}decoding="async"{% endif %} draggable="false"></div>
+          <div class="hero-project-copy">
+            <p class="eyebrow">{{ platform.eyebrow | escape }}</p>
+            <h2>{{ platform.title | escape }}</h2>
+            <p>{{ platform.description | escape }}</p>
+            <div class="hero-project-highlights">
+              <span class="hero-project-meta-label">{{ platform.highlights_label | escape }}</span>
+              <ul class="hero-project-tags">{% for highlight in platform.highlights %}<li>{{ highlight | escape }}</li>{% endfor %}</ul>
+            </div>
+            <a class="text-link" href="{{ platform.video_path | relative_url }}">{{ platform.video_label | escape }} <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="hero-carousel-footer">
+    <span class="eyebrow">FROM THEORY TO EXPERIMENT</span>
+    <div class="hero-carousel-controls" data-carousel-controls hidden>
+      <button class="carousel-toggle" type="button" data-carousel-toggle aria-label="Pause slideshow">Pause</button>
+      <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Previous project" aria-controls="research-carousel-viewport"><span aria-hidden="true">←</span></button>
+      <div class="carousel-dots" role="group" aria-label="Choose a project">
+        {% for platform in lab.platforms %}<button type="button" data-carousel-go="{{ forloop.index0 }}" aria-label="Show {{ platform.title | escape }}" aria-controls="research-carousel-viewport" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}"><span aria-hidden="true"></span></button>{% endfor %}
+      </div>
+      <button class="carousel-arrow" type="button" data-carousel-next aria-label="Next project" aria-controls="research-carousel-viewport"><span aria-hidden="true">→</span></button>
+      <span class="carousel-count" data-carousel-count aria-hidden="true">01 / {{ lab.platforms.size | prepend: '0' | slice: -2, 2 }}</span>
+    </div>
+  </div>
+  <p class="sr-only" data-carousel-status role="status" aria-live="polite" aria-atomic="true"></p>
+</section>
+<section class="home-section" aria-labelledby="research-heading">
+  <div class="section-heading"><h2 id="research-heading">Research directions</h2><a class="text-link" href="{{ '/research-fields/' | relative_url }}">All research <span aria-hidden="true">→</span></a></div>
+  <div class="home-research">
+    {% for field in lab.research_fields %}
+    <a class="research-card" href="{{ '/research-fields/' | relative_url }}#{{ field.id }}"><span class="research-number">0{{ forloop.index }}</span><h3>{{ field.title }}</h3><span class="research-arrow" aria-hidden="true">↗</span></a>
+    {% endfor %}
+  </div>
+</section>
+<section class="home-section" aria-labelledby="news-heading">
+  <div class="section-heading"><h2 id="news-heading">Latest news</h2><a class="text-link" href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">→</span></a></div>
+  <div class="news-list">
+    {% for item in lab.news %}<article class="news-row"><time datetime="{{ item.date }}">{{ item.display_date }}</time><div><h3><a href="{{ item.path | relative_url }}">{{ item.title }}</a></h3><span class="news-source">{{ item.source }}</span></div><a class="news-arrow" href="{{ item.path | relative_url }}" aria-label="Read {{ item.title | escape }}">↗</a></article>{% endfor %}
+  </div>
+</section>
+<section class="home-section" aria-labelledby="videos-heading">
+  <div class="section-heading"><h2 id="videos-heading">Research in motion</h2><a class="text-link" href="{{ '/videos/' | relative_url }}">All videos <span aria-hidden="true">→</span></a></div>
+  <div class="home-video-grid">
+    {% for video in lab.videos limit:3 %}
+    <article class="home-video-card">
+      <div class="home-video-frame"><iframe src="{{ video.path }}" title="{{ video.title | escape }}" width="{{ video.width }}" height="{{ video.height }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <div class="home-video-copy">
+        <p class="eyebrow">DEMONSTRATION 0{{ forloop.index }}</p>
+        <h3>{{ video.title }}</h3>
+        {% if video.caption != video.title %}<p>{{ video.caption }}</p>{% endif %}
+        <a class="text-link" href="{{ video.path | replace: '/embed/', '/watch?v=' }}">Watch on YouTube <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+<section class="home-section" aria-labelledby="papers-heading">
+  <div class="section-heading"><h2 id="papers-heading">Selected publications</h2><a class="text-link" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">→</span></a></div>
+  <ol class="home-publications">{% for paper in lab.selected_publications limit:2 %}<li>{{ paper.html }}</li>{% endfor %}</ol>
+</section>
+<aside class="home-join" aria-labelledby="home-join-heading"><div><p class="eyebrow">JOIN ICML</p><h2 id="home-join-heading">Start your research journey.</h2><p>Graduate study and undergraduate research in control, learning, and autonomous systems.</p></div><a class="button-link" href="{{ '/join-us/' | relative_url }}">Join Us →</a></aside>

@@ -1,0 +1,756 @@
+{
+  "source_commit": "3bbc154ef9835c5c67253086c605d54a236875b2",
+  "prepared_date": "2026-10-26",
+  "purpose": "ICML content preservation baseline after removing al-folio. Hashes may change after intentional future content edits.",
+  "summary": {
+    "original_files": 401,
+    "images_retained": 20,
+    "migrated_source_files": 18,
+    "theme_and_demo_files_removed": 359,
+    "original_paths_removed": 377
+  },
+  "retained": [
+    {
+      "path": "assets/img/101.png",
+      "bytes": 792241,
+      "sha256": "53064e8f8e4b35b7d6a40108d92c682377724f18451eeeaee4c741dda2703789",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/111.png",
+      "bytes": 136790,
+      "sha256": "09329f0d2b5326992df9b3f5d344765efcb292275d3d9a06cdd617bcc76a9308",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/22.png",
+      "bytes": 382958,
+      "sha256": "7d034b42588990765300a39e0e00a9d5303774deac632ac6788b04403b3f6451",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/33.png",
+      "bytes": 422083,
+      "sha256": "e0855df856490c70f2733e9e25760e128dd2001873ae782d1d426b7a85e5c18a",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/44.png",
+      "bytes": 404175,
+      "sha256": "a1521f36084a4ee2323e8bd0cfc6e28a036d48f9753f099a42bcd0fe447829a2",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/55.png",
+      "bytes": 253471,
+      "sha256": "200c9851bef718d714a05893dfa444db1950fb2338a8841462047180dc35f0ed",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/66.png",
+      "bytes": 314273,
+      "sha256": "a87acb5b13aa13a69c386aa7e4a003d67fe4cd078d26d737df165b467443338f",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/77.png",
+      "bytes": 328149,
+      "sha256": "48b9d6979fa7b97d1ae4fff487e336b5239666c4618b4a1ec15b82582464409b",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/88.png",
+      "bytes": 299276,
+      "sha256": "e743372f3edb16396e7de129dcdccdb92739dd47e0de83ea0a08bff5ed97b9fd",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/99.png",
+      "bytes": 444345,
+      "sha256": "677e841578ec8bbd702fc232989026c50d79409b938839a50b2d2a2c3fdcca18",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/dain.png",
+      "bytes": 346137,
+      "sha256": "e620093b837948770df15efcfb6d39aee675affde3aa83c62d968565548dfba8",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/gyun.jpg",
+      "bytes": 165305,
+      "sha256": "855bea33afbfdd0b63cf533c75837db0a7e84bd32c20943d4d181798efdef9d6",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/homemiddle.png",
+      "bytes": 194484,
+      "sha256": "bee731e3e7e6e9e34a4e4aa4557a0fa1d74d35d02ef6bd04653c2a1c9d37d0cf",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/icmllogo.png",
+      "bytes": 1200501,
+      "sha256": "012f4117a8699383837eaaeb86edc1f4424cb9549142a42d11f8e7f96c476454",
+      "note": "Unreferenced lab material, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/kaistimg.png",
+      "bytes": 19472665,
+      "sha256": "8d19b45c031e7d973f323494ebb3a5d497781aea74ac2e9af5173bcba5a29fc6",
+      "note": "Unreferenced lab material, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/kaistimg22.jpg",
+      "bytes": 411697,
+      "sha256": "a788b7051347d8115945906fb2824615c06ec94763f177b857842159bf916cef",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/labhomepage.png",
+      "bytes": 4189591,
+      "sha256": "5adfeb8e260f66de77da9cfd125b022e4b8306ca0fd2e42d0187f7379c07593e",
+      "note": "Unreferenced lab material, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/prof_pic.jpg",
+      "bytes": 39335,
+      "sha256": "608555168ebe99f87bdf8d4b8c6f8d39780db4d0973c83312a51870b965e7f27",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/sihyun.jpg",
+      "bytes": 206651,
+      "sha256": "3d788095e3909067b84800409d5a9c66076960e7d815061aea6fce34f06ca199",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "assets/img/woo.jpg",
+      "bytes": 386802,
+      "sha256": "c10db5a26ab8d0bfa70929c6b5216fb1cb7069b8b420bb4bf8e83d7d0ab28028",
+      "note": "Lab image, visually reviewed and preserved."
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1106,
+      "sha256": "017cb5c3ad7e6d562c6cdc548795023d3c27146d88bc5723ccec581da050d18d",
+      "note": "Original upstream license retained for provenance."
+    }
+  ],
+  "migrated": [
+    {
+      "source": "_pages/professor.md",
+      "destination": "content/pages/professor.md",
+      "method": "Presentation removed; all body text, semantic headings/lists, image alt text and links preserved.",
+      "source_sha256": "a2e426aa9b4af3721563ff7471b78f9766ac351167c10fa2e1b2d2cb78533b26"
+    },
+    {
+      "source": "_pages/research_fields.md",
+      "destination": "content/pages/research-fields.md",
+      "method": "Presentation removed; all body text, semantic headings/lists, image alt text and links preserved.",
+      "source_sha256": "9d2f985d2a089ad142a88773a1c619965bbbc5b141891afb04d050ccbb1aa49a"
+    },
+    {
+      "source": "_pages/about_woo.md",
+      "destination": "content/people/about_woo.md",
+      "method": "Byte-identical biography.",
+      "source_sha256": "02f5b9f838e2e74cb73f1c59fd84611b6c29ce23437f34b3fc3b89d0be55d95d"
+    },
+    {
+      "source": "_pages/about_dain.md",
+      "destination": "content/people/about_dain.md",
+      "method": "Byte-identical biography.",
+      "source_sha256": "de528b935c2757c2cff3fac70f1cdf4ca3b0f0c6077572b5da98a00c4caa8a69"
+    },
+    {
+      "source": "_pages/about_gyun.md",
+      "destination": "content/people/about_gyun.md",
+      "method": "Byte-identical biography.",
+      "source_sha256": "596a76fb54767d09138511266c82d4f6209d4131d840546bb6e596ef6f1347c5"
+    },
+    {
+      "source": "_pages/about_sihyun.md",
+      "destination": "content/people/about_sihyun.md",
+      "method": "Byte-identical biography.",
+      "source_sha256": "0b057c1fac3b95b83ddaf530ccad61555dbb0da52e6aded7fdf678621de7674a"
+    },
+    {
+      "source": "_pages/profiles.md",
+      "destination": "content/people.json",
+      "method": "Profile order, grouping, names and original name markup, biography/image associations preserved.",
+      "source_sha256": "0f78b0e61ba6f5a81962fefedd81c2829b0213a034c99e5251efec588bd05642"
+    },
+    {
+      "source": "_pages/alumni.md",
+      "destination": "content/people.json",
+      "method": "Profile order, grouping, names and original name markup, biography/image associations preserved.",
+      "source_sha256": "c2f71e494bb045ac9b22aadd6405c1ef9b61ff63a0a8213fb4bd15c53bf4ff4b"
+    },
+    {
+      "source": "_pages/videos.md",
+      "destination": "content/videos.json",
+      "method": "All three video URLs, titles, captions and original embed dimensions preserved; page route in site.json.",
+      "source_sha256": "2a4da03c3ceb964e304f4179c96c020a59814bb84f055dcba7d67cf8f9a2615c"
+    },
+    {
+      "source": "_news/announcement_1.md",
+      "destination": "content/news/announcement_1.md",
+      "method": "Original title, date and image preserved. Source body was empty.",
+      "source_sha256": "2e612bcc5930b00991883d9584c4f264a34d1d471e47400795bb225471b271ae"
+    },
+    {
+      "source": "_config.yml",
+      "destination": "content/site.json",
+      "method": "Lab metadata, route/category labels or embedded lab contact/image extracted; theme logic removed.",
+      "source_sha256": "dc904e0b9a2fd9513fad737c02579575b16396bf1883abdb9efd30d8a9261016"
+    },
+    {
+      "source": "_pages/about.md",
+      "destination": "content/site.json",
+      "method": "Lab metadata, route/category labels or embedded lab contact/image extracted; theme logic removed.",
+      "source_sha256": "7d5170d62372c4b680c69dc20c4e1414a34be29cee1601111ccfd98bae7aa396"
+    },
+    {
+      "source": "_pages/dropdown.md",
+      "destination": "content/site.json",
+      "method": "Lab metadata, route/category labels or embedded lab contact/image extracted; theme logic removed.",
+      "source_sha256": "cad78eaaaa0a1db363da15f446ef517101a91963af36cf32b5f4adc18513b41d"
+    },
+    {
+      "source": "_pages/news.md",
+      "destination": "content/site.json",
+      "method": "Lab metadata, route/category labels or embedded lab contact/image extracted; theme logic removed.",
+      "source_sha256": "b8ad74803e70db993ffe8d0ec8b6735e9538150f8206af8ea44f2e37488c3359"
+    },
+    {
+      "source": "_pages/projects.md",
+      "destination": "content/site.json",
+      "method": "Lab metadata, route/category labels or embedded lab contact/image extracted; theme logic removed.",
+      "source_sha256": "64f319bc88313c19e1fa9be724efeeb12e792feb8e7f7abdae65bf38f9d1b9ef"
+    },
+    {
+      "source": "_pages/publications.md",
+      "destination": "content/site.json",
+      "method": "Lab metadata, route/category labels or embedded lab contact/image extracted; theme logic removed.",
+      "source_sha256": "12261fc8786570d5518ac3d72fd8ca9cabcd9358f3c61a9c65242cc8a5618a52"
+    },
+    {
+      "source": "_layouts/about.liquid",
+      "destination": "content/site.json",
+      "method": "Lab metadata, route/category labels or embedded lab contact/image extracted; theme logic removed.",
+      "source_sha256": "6e8e2c41ed2695483e26b7a4c39062cf519e30353eee878f2d1a1624c819a25e"
+    },
+    {
+      "source": "_includes/contact_footer.liquid",
+      "destination": "content/site.json",
+      "method": "Lab metadata, route/category labels or embedded lab contact/image extracted; theme logic removed.",
+      "source_sha256": "e742707edf3c126e8ebda76be9f4b000be9e53dcab223f340561af3cee319b4c"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "content/pages/professor.md",
+      "bytes": 16164,
+      "sha256": "95fd35256b7d4a3e93458f678c9b6745d501cad2885f660c71085930c915da70"
+    },
+    {
+      "path": "content/pages/research-fields.md",
+      "bytes": 2484,
+      "sha256": "6ff816181ed2a181ef76e36a0014e598a391a860c1d9d5231ed753dc3fd01af0"
+    },
+    {
+      "path": "content/people/about_woo.md",
+      "bytes": 114,
+      "sha256": "02f5b9f838e2e74cb73f1c59fd84611b6c29ce23437f34b3fc3b89d0be55d95d"
+    },
+    {
+      "path": "content/people/about_dain.md",
+      "bytes": 111,
+      "sha256": "de528b935c2757c2cff3fac70f1cdf4ca3b0f0c6077572b5da98a00c4caa8a69"
+    },
+    {
+      "path": "content/people/about_gyun.md",
+      "bytes": 118,
+      "sha256": "596a76fb54767d09138511266c82d4f6209d4131d840546bb6e596ef6f1347c5"
+    },
+    {
+      "path": "content/people/about_sihyun.md",
+      "bytes": 117,
+      "sha256": "0b057c1fac3b95b83ddaf530ccad61555dbb0da52e6aded7fdf678621de7674a"
+    },
+    {
+      "path": "content/people.json",
+      "bytes": 935,
+      "sha256": "6bbd018dd4f0d24e603d321c10e2e24e7eccc03bd78c0c532a30f9c0949d5ca2"
+    },
+    {
+      "path": "content/videos.json",
+      "bytes": 847,
+      "sha256": "2300db5196ae3e94475d8b290897685aad9d315f97fb25657a0f3ed031b0292c"
+    },
+    {
+      "path": "content/news/announcement_1.md",
+      "bytes": 202,
+      "sha256": "d4dbc73c55ba40304baf3201085d9bad1db1f9a991db63766dd89b01c3aab6cc"
+    },
+    {
+      "path": "content/site.json",
+      "bytes": 2937,
+      "sha256": "c4535092dc94705aad731cea605d1af6671cf0e67f10bf72562e3d06af5d941f"
+    }
+  ],
+  "body_text_checks": [
+    {
+      "source": "_pages/professor.md",
+      "destination": "content/pages/professor.md",
+      "original_text_sha256": "854b1e7bceb0d6dfc9011f439b2ff46f963ad9b8e0d1de83af4e967c23e99da3",
+      "preserved_text_sha256": "854b1e7bceb0d6dfc9011f439b2ff46f963ad9b8e0d1de83af4e967c23e99da3"
+    },
+    {
+      "source": "_pages/research_fields.md",
+      "destination": "content/pages/research-fields.md",
+      "original_text_sha256": "1c5d3b02bdd3c23390180bbb3990d4c0d3ab459f0f660ffba521d939ed476fd2",
+      "preserved_text_sha256": "1c5d3b02bdd3c23390180bbb3990d4c0d3ab459f0f660ffba521d939ed476fd2"
+    }
+  ],
+  "removed_groups": [
+    {
+      "paths": [
+        "_layouts/",
+        "_includes/",
+        "_sass/",
+        "_scripts/",
+        "_plugins/",
+        "assets/css/",
+        "assets/js/",
+        "assets/fonts/",
+        "assets/webfonts/"
+      ],
+      "reason": "Old theme code and libraries. Lab contact and home image extracted before removal."
+    },
+    {
+      "paths": [
+        "_posts/",
+        "_projects/",
+        "_books/",
+        "_teachings/",
+        "_bibliography/",
+        "_data/"
+      ],
+      "reason": "Theme tutorials/examples. Actual publications, projects and teaching history retained in professor.md."
+    },
+    {
+      "paths": [
+        "assets/audio/",
+        "assets/bibliography/",
+        "assets/html/",
+        "assets/json/",
+        "assets/jupyter/",
+        "assets/pdf/",
+        "assets/plotly/",
+        "assets/rendercv/",
+        "assets/video/"
+      ],
+      "reason": "Example media, notebooks, datasets and Einstein CV; no lab-specific files found."
+    },
+    {
+      "paths": [
+        "assets/img/1.jpg through 12.jpg",
+        "assets/img/prof_pic_color.png",
+        "assets/img/rhino.png",
+        "assets/img/template_error.png",
+        "assets/img/book_covers/",
+        "assets/img/publication_preview/"
+      ],
+      "reason": "Stock photos, Einstein examples and theme help/demo images."
+    },
+    {
+      "paths": [
+        "_pages/"
+      ],
+      "reason": "Lab content extracted as listed above; remaining pages were theme placeholders/examples."
+    },
+    {
+      "paths": [
+        "_config.yml",
+        ".github/",
+        ".devcontainer/",
+        ".gemini/",
+        "bin/",
+        "Dockerfile",
+        "docker-compose*.yml",
+        "Gemfile",
+        "package*.json",
+        "requirements.txt",
+        "purgecss.config.js",
+        "robots.txt",
+        "readme_preview/",
+        "lighthouse_results/",
+        "root theme documentation and tool configuration"
+      ],
+      "reason": "Old build/deployment/tooling and documentation removed. Site identity extracted; README and AGENTS replaced."
+    }
+  ],
+  "review_notes": [
+    "News title contains (2025) while date is 2026-02-10 09:00:00+0900; preserved exactly.",
+    "Professor address: Room #251, Building 8. Footer address: Room 251, Bldg 8-B. Both retained.",
+    "Publication status and dates retained from source without updating current status.",
+    "No lab PDF/audio/local video found. Three external YouTube embed URLs preserved."
+  ],
+  "follow_up_changes": [
+    {
+      "date": "2026-10-26",
+      "reason": "User requested a consistent news format and confirmed removal of three profiles.",
+      "removed_by_user": [
+        "content/people/about_woo.md",
+        "content/people/about_dain.md",
+        "content/people/about_gyun.md",
+        "assets/img/woo.jpg",
+        "assets/img/dain.png",
+        "assets/img/gyun.jpg"
+      ],
+      "profile_index": "content/people.json",
+      "news_rename": {
+        "from": "content/news/announcement_1.md",
+        "to": "content/news/2026-02-10-kaist-mobility-challenge.md",
+        "previous_title": "Department of Electrical Engineering, Incheon National University Grand Prize - 1st KAIST Mobility Challenge (2025)",
+        "previous_date": "2026-02-10 09:00:00+0900"
+      },
+      "news_format": "Both entries now use the same eight metadata fields, YYYY-MM-DD dates, two English summary paragraphs and one source link. See README.",
+      "current_counts": {
+        "images": 17,
+        "biographies": 1,
+        "people": 1,
+        "news": 2
+      },
+      "note": "The retained, migrated and outputs arrays above are the initial preservation snapshot, not the current file set. Historical news participation records are preserved."
+    },
+    {
+      "date": "2026-10-26",
+      "reason": "User supplied a new profile photo, email and research interests. Display name and role are awaiting clarification.",
+      "added_image": {
+        "uploaded_path": "yh_kim.jpg",
+        "path": "assets/img/yh_kim.jpg",
+        "bytes": 59619,
+        "sha256": "cdc9a13cf145dd14e47f6520e95cd2ca52714252f7f7ca9027b9e4dddde046d5"
+      },
+      "biography": "content/people/about_yh_kim.md",
+      "email": "kaiser9192@inu.ac.kr",
+      "research_interests_original": [
+        "자율주행",
+        "강화학습",
+        "최적제어"
+      ],
+      "registration_status": "awaiting_name_and_role",
+      "current_counts": {
+        "images": 18,
+        "biographies": 2,
+        "registered_people": 1,
+        "pending_profiles": 1,
+        "news": 2
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "reason": "User requested incoming undergraduate researchers in the order 김예훈, 길순형, 장윤서, and a Join Us recruitment page with default guidance.",
+      "profile_index": "content/people.json",
+      "incoming_undergraduates": [
+        "김예훈",
+        "길순형",
+        "장윤서"
+      ],
+      "registration_status": "incoming",
+      "profile_connections": {
+        "김예훈": {
+          "image": "assets/img/yh_kim.jpg",
+          "biography": "content/people/about_yh_kim.md"
+        },
+        "길순형": {
+          "image": null,
+          "biography": null
+        },
+        "장윤서": {
+          "image": null,
+          "biography": null
+        }
+      },
+      "recruitment_page": "content/pages/join-us.md",
+      "contact_email": "mh.lee@inu.ac.kr",
+      "note": "Incoming status is distinct from current membership. No start dates, English name spellings, admissions requirements, funding promises or application deadlines were inferred. Existing alumni and all image bytes are preserved.",
+      "current_counts": {
+        "images": 18,
+        "biographies": 2,
+        "registered_people": 4,
+        "incoming_undergraduates": 3,
+        "alumni": 1,
+        "news": 2
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "reason": "User clarified that 김예훈, 길순형 and 장윤서 already participate as undergraduate researchers, supplied their departments, and requested recruitment for graduate study as well as undergraduate research.",
+      "supersedes": "The earlier incoming status was an assistant interpretation and is no longer current.",
+      "profile_index": "content/people.json",
+      "registration_status": "current",
+      "departments": {
+        "김예훈": "Department of Electrical Engineering / 전기공학과",
+        "길순형": "Department of Electrical Engineering / 전기공학과",
+        "장윤서": "Department of Embedded Systems Engineering / 임베디드 시스템 공학과"
+      },
+      "recruitment_page": "content/pages/join-us.md",
+      "recruitment_scope": "Graduate study (master's and doctoral programs) and undergraduate research participation",
+      "note": "Member order, existing profile connections, alumni and image bytes remain unchanged. No start dates or admission conditions were inferred."
+    },
+    {
+      "date": "2026-10-26",
+      "reason": "User supplied 장윤서's profile photo, email and research interests.",
+      "name": "장윤서",
+      "added_image": {
+        "uploaded_path": "ys_jang.jpg",
+        "path": "assets/img/ys_jang.jpg",
+        "bytes": 73399,
+        "sha256": "05402150ecb9d986a7cf26305c330a6abf2308184e8337a84c6d0db734966a66"
+      },
+      "biography": "content/people/about_ys_jang.md",
+      "email": "jyoonseo45@gmail.com",
+      "research_interests_original": [
+        "로봇 제어",
+        "로봇 매니퓰레이터",
+        "로봇 경로 계획"
+      ],
+      "research_interests_english": [
+        "Robot Control",
+        "Robot Manipulators",
+        "Robot Path Planning"
+      ],
+      "note": "Photo moved into assets/img without changing bytes. Member order, current status and department are unchanged.",
+      "current_counts": {
+        "images": 19,
+        "biographies": 3,
+        "registered_people": 4
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "reason": "User requested a clickable email link for 김예훈 and a larger professor portrait.",
+      "biography": "content/people/about_yh_kim.md",
+      "email_link": "mailto:kaiser9192@inu.ac.kr",
+      "note": "Existing biography wording is unchanged; paragraph and email-link markup were added. Professor portrait size is adjusted only in CSS; the original photo bytes are unchanged."
+    },
+    {
+      "date": "2026-10-26",
+      "reason": "User supplied 길순형's email and research interests and confirmed that his photo is not yet available.",
+      "name": "길순형",
+      "biography": "content/people/about_sh_kil.md",
+      "email": "kilsh1210@inu.ac.kr",
+      "image": null,
+      "research_interests_original": [
+        "드론 군집제어",
+        "강화학습"
+      ],
+      "research_interests_english": [
+        "Drone Swarm Control",
+        "Reinforcement Learning"
+      ],
+      "note": "The existing name placeholder remains until a photo is supplied. Member order, current status and department are unchanged.",
+      "current_counts": {
+        "images": 19,
+        "biographies": 4,
+        "registered_people": 4
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "reason": "User supplied three research images for the home hero and Research in motion areas, and a RoboCup 2026 SML award photo for the news story.",
+      "added_images": [
+        {
+          "uploaded_path": "erp42-autonomous-driving.webp",
+          "path": "assets/img/erp42-autonomous-driving.webp",
+          "bytes": 1568986,
+          "sha256": "cd07035e6b39a292025d2c4f1e1e0dd0efddc568b46172bfa5c6faad5b9ac692"
+        },
+        {
+          "uploaded_path": "robocup-sml-mobile-manipulator.webp",
+          "path": "assets/img/robocup-sml-mobile-manipulator.webp",
+          "bytes": 1554388,
+          "sha256": "8a0ef11375eeb2ccb69e71d2778b162fafaab9935f40688e04cadfc79ac33135"
+        },
+        {
+          "uploaded_path": "smart-stroller.webp",
+          "path": "assets/img/smart-stroller.webp",
+          "bytes": 2598260,
+          "sha256": "366d4517aada0c79b1b12eacaee00b8219130b9bcc7bb09e2305e5b0615b1c71"
+        },
+        {
+          "uploaded_path": "인천대_TEAM_INU_로보컵_2026_SML_부문_세계_1위.png",
+          "path": "assets/img/robocup-2026-sml-champions.png",
+          "bytes": 346845,
+          "sha256": "24dd502967ede59e1e3f7f4410a1f9b4bcf7215fbe95d93ce8a01a311ab1f625"
+        }
+      ],
+      "placement": {
+        "home_research_images": [
+          "assets/img/erp42-autonomous-driving.webp",
+          "assets/img/robocup-sml-mobile-manipulator.webp",
+          "assets/img/smart-stroller.webp"
+        ],
+        "home_areas": [
+          "Home hero",
+          "Research in motion"
+        ],
+        "news": "content/news/2026-07-07-robocup-sml.md"
+      },
+      "news_image_update": {
+        "previous_image": null,
+        "image": "/assets/img/robocup-2026-sml-champions.png"
+      },
+      "note": "All image bytes are preserved. Only the award photo filename and the existing news image field changed. News dates, title, body, source metadata, existing research text, and video URLs/captions remain unchanged. No funding/project relationships or new technical capabilities were inferred.",
+      "current_counts": {
+        "images": 23,
+        "biographies": 4,
+        "registered_people": 4,
+        "news": 2
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "reason": "User supplied a quadruped robot photo and a drone platform photo and requested adding both to the existing home carousel.",
+      "added_images": [
+        {
+          "uploaded_path": "KakaoTalk_20261026_153913472.jpg",
+          "path": "assets/img/quadruped-robot.jpg",
+          "bytes": 4675024,
+          "sha256": "c4e95377ed0853329429342f51d4e769af6855c379a00bea4c7f20f13b0cf404"
+        },
+        {
+          "uploaded_path": "KakaoTalk_20261026_153919475.jpg",
+          "path": "assets/img/drone-platform.jpg",
+          "bytes": 2614785,
+          "sha256": "b08761f0e3696d60a42bc810951d1462602d6540dbfae07139a7b94da4bbabfc"
+        }
+      ],
+      "placement": "Home hero carousel",
+      "carousel_order": [
+        "ERP-42",
+        "Mobile Manipulator",
+        "Smart Stroller",
+        "Quadruped Robot",
+        "Drone Platform"
+      ],
+      "note": "Images were renamed and moved into assets/img without changing their bytes or resolution. No manufacturer, model, funding relationship, or unprovided capability was inferred. Existing content, images, news and video links remain unchanged.",
+      "current_counts": {
+        "images": 25,
+        "home_carousel_items": 5,
+        "biographies": 4,
+        "registered_people": 4,
+        "news": 2
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "reason": "User requested saving four logo variants and selected the white square logo for the sidebar. One original logo file is currently available in the workspace.",
+      "added_image": {
+        "uploaded_path": "중앙 정렬 ICML LAB 로봇 로고-3.png",
+        "path": "assets/img/icml-logo-square-light.png",
+        "bytes": 1207867,
+        "sha256": "1aa569b4ba624b8b26c8c514b6c63c19cddd8c5567bbd882c07a75512cc8eb61",
+        "width": 1254,
+        "height": 1254
+      },
+      "selected_sidebar_logo": "/assets/img/icml-logo-square-light.png",
+      "logo_variants": {
+        "requested": 4,
+        "saved": 1,
+        "remaining_originals_unavailable": 3
+      },
+      "preserved_previous_logo": "assets/img/icmllogo.png",
+      "note": "The available logo was renamed and moved without changing bytes. The previous logo remains intact. The other three original logo files have not been obtained or saved; no variants were recreated.",
+      "current_counts": {
+        "images": 26,
+        "saved_new_logo_variants": 1,
+        "remaining_logo_variants": 3,
+        "home_carousel_items": 5,
+        "biographies": 4,
+        "registered_people": 4,
+        "news": 2
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "reason": "User supplied the navy horizontal ICML LAB logo and explicitly selected it as the final sidebar logo.",
+      "added_image": {
+        "uploaded_path": "네이비 배경의 ICML LAB 로봇 로고.png",
+        "path": "assets/img/icml-logo-wide-dark.png",
+        "bytes": 1326281,
+        "sha256": "62f4db9b7530aac81e16e0a00abde7690be6331f1f978aa5baf258820a56d260",
+        "width": 1774,
+        "height": 887
+      },
+      "selected_sidebar_logo": "/assets/img/icml-logo-wide-dark.png",
+      "selection_status": "final",
+      "supersedes": "The earlier white square sidebar selection and pending four-variant request are historical; the user's final navy horizontal logo selection controls the current sidebar.",
+      "preserved_previous_logos": [
+        "assets/img/icmllogo.png",
+        "assets/img/icml-logo-square-light.png"
+      ],
+      "note": "The final logo was renamed and moved without changing bytes. Both the original lab logo and the previously saved white square logo remain intact. Two newly supplied logo originals have been saved; no unavailable variants were reconstructed.",
+      "current_counts": {
+        "images": 27,
+        "saved_new_logo_variants": 2,
+        "home_carousel_items": 5,
+        "biographies": 4,
+        "registered_people": 4,
+        "news": 2
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "reason": "User requested video links and richer concise descriptions for all five home platforms, supplied ERP-42 and Smart Stroller research details, and authorized general Videos-page links when dedicated videos do not exist.",
+      "added_content": "content/platforms.json",
+      "platform_order": [
+        "ERP-42",
+        "Mobile Manipulator",
+        "Smart Stroller",
+        "Quadruped Robot",
+        "Drone Platform"
+      ],
+      "user_provided_details": [
+        "ERP-42 contributions and core technology",
+        "Smart Stroller camera/2D LiDAR sensing in ROS 2 and Arduino low-level motor actuation"
+      ],
+      "video_links": {
+        "ERP-42": {
+          "path": "/videos/#video-3",
+          "label": "Watch the research video"
+        },
+        "Mobile Manipulator": {
+          "path": "/videos/#video-2",
+          "label": "Related research video"
+        },
+        "Smart Stroller": {
+          "path": "/videos/",
+          "label": "Browse research videos"
+        },
+        "Quadruped Robot": {
+          "path": "/videos/",
+          "label": "Browse research videos"
+        },
+        "Drone Platform": {
+          "path": "/videos/",
+          "label": "Browse research videos"
+        }
+      },
+      "source_preservation": "Verbatim user-provided ERP-42 and Smart Stroller details are retained in unrendered source_details fields. Existing research, video and image references are recorded in source_notes for the other platforms.",
+      "note": "Existing content, image bytes, video URLs/captions and news remain unchanged. General Videos-page links do not imply dedicated videos. Drone descriptions distinguish related UAV research from algorithms or achievements demonstrated on the pictured test platform.",
+      "current_counts": {
+        "images": 27,
+        "home_carousel_items": 5,
+        "platform_records": 5,
+        "biographies": 4,
+        "registered_people": 4,
+        "news": 2,
+        "videos": 3
+      }
+    }
+  ]
+}

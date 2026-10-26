@@ -1,0 +1,39 @@
+[
+  {
+    "group": "undergraduate",
+    "name": "김예훈",
+    "role": "Undergraduate Researcher",
+    "status": "current",
+    "department": "Department of Electrical Engineering",
+    "department_ko": "전기공학과",
+    "image": "/assets/img/yh_kim.jpg",
+    "biography": "content/people/about_yh_kim.md"
+  },
+  {
+    "group": "undergraduate",
+    "name": "길순형",
+    "role": "Undergraduate Researcher",
+    "status": "current",
+    "department": "Department of Electrical Engineering",
+    "department_ko": "전기공학과",
+    "image": null,
+    "biography": "content/people/about_sh_kil.md"
+  },
+  {
+    "group": "undergraduate",
+    "name": "장윤서",
+    "role": "Undergraduate Researcher",
+    "status": "current",
+    "department": "Department of Embedded Systems Engineering",
+    "department_ko": "임베디드 시스템 공학과",
+    "image": "/assets/img/ys_jang.jpg",
+    "biography": "content/people/about_ys_jang.md"
+  },
+  {
+    "group": "alumni",
+    "name": "김 시 현 / Sihyun Kim",
+    "source_name_html": "<p>&#xAE40; &#xC2DC; &#xD604; / Sihyun Kim</p>",
+    "image": "/assets/img/sihyun.jpg",
+    "biography": "content/people/about_sihyun.md"
+  }
+]

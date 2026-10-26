@@ -1,15 +1,28 @@
-_site
-.bundle
-.DS_store
-.idea
-.jekyll-cache
-.jekyll-metadata
-.ruby-version
-.sass-cache
-.tweet-cache
-.venv
-assets/libs/
-assets/rendercv/rendercv_output/*.typ
-Gemfile.lock
+# Local dependencies and generated output
 node_modules/
-vendor
+dist/
+build/
+out/
+coverage/
+.cache/
+_site/
+_data/lab.json
+_pages/
+.tools/
+.bundle/
+.jekyll-cache/
+.jekyll-metadata
+__pycache__/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+.venv/
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo

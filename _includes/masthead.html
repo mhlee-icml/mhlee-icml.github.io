@@ -1,0 +1,19 @@
+{% comment %}Adapted from Academic Pages / Minimal Mistakes masthead. See THIRD_PARTY_NOTICES.md.{% endcomment %}
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="ICML Lab home">
+      <span class="brand-mark" aria-hidden="true">ICML<span>.</span></span>
+      <span class="brand-text">Incheon National University<span class="brand-subtitle">INTELLIGENT CONTROL & MACHINE LEARNING</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      {% for link in site.data.navigation.main %}
+        {% assign active = false %}
+        {% if page.url == link.url %}{% assign active = true %}{% endif %}
+        {% if link.url == '/news/' and page.layout == 'news' %}{% assign active = true %}{% endif %}
+        {% if link.url == '/people/' and page.url == '/professor/' or link.url == '/people/' and page.url == '/alumni/' %}{% assign active = true %}{% endif %}
+        <a href="{{ link.url | relative_url }}" class="{% if active %}active {% endif %}{% if link.url == '/join-us/' %}nav-join{% endif %}"{% if active %} aria-current="page"{% endif %}>{{ link.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

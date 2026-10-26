@@ -1,0 +1,134 @@
+{
+  "name": "ICML",
+  "full_name": "Intelligent Control & Machine Learning Lab",
+  "url": "https://mhlee-icml.github.io",
+  "baseurl": "",
+  "language": "en",
+  "original_name_fields": {
+    "first_name": "Lee",
+    "middle_name": "Myoung",
+    "last_name": "Hoon"
+  },
+  "home_image": {
+    "path": "/assets/img/homemiddle.png",
+    "alt": "ICML Home Logo"
+  },
+  "contact_footer": {
+    "heading": "Contact",
+    "lines": [
+      "Tel : 032-835-8433",
+      "Mail : mh.lee@inu.ac.kr",
+      "Room 251, Bldg 8-B",
+      "Department of Electrical engineering, Incheon National University"
+    ]
+  },
+  "routes": [
+    {
+      "title": "Home",
+      "path": "/",
+      "description": null,
+      "navigation": true,
+      "order": 0
+    },
+    {
+      "title": "Research Fields",
+      "path": "/research-fields/",
+      "description": null,
+      "navigation": true,
+      "order": 2
+    },
+    {
+      "title": "Projects",
+      "path": "/projects/",
+      "description": null,
+      "navigation": true,
+      "order": 3
+    },
+    {
+      "title": "Publications",
+      "path": "/publications/",
+      "description": "",
+      "navigation": true,
+      "order": 4
+    },
+    {
+      "title": "Videos",
+      "path": "/videos/",
+      "description": null,
+      "navigation": true,
+      "order": 5
+    },
+    {
+      "title": "Professor",
+      "path": "/professor/",
+      "description": "Professor profile and curriculum vitae",
+      "navigation": false,
+      "order": 6
+    },
+    {
+      "title": "People",
+      "path": "/people/",
+      "description": "members of the lab",
+      "navigation": false,
+      "order": 6
+    },
+    {
+      "title": "Alumni",
+      "path": "/alumni/",
+      "description": "alumni of the lab",
+      "navigation": false,
+      "order": 8
+    },
+    {
+      "title": "News",
+      "path": "/news/",
+      "description": null,
+      "navigation": true,
+      "order": 7
+    },
+    {
+      "title": "Join Us",
+      "path": "/join-us/",
+      "description": "Graduate study and undergraduate research opportunities and contact information",
+      "navigation": true,
+      "order": 9
+    }
+  ],
+  "people_menu": {
+    "title": "People",
+    "order": 7,
+    "children": [
+      {
+        "title": "Professor",
+        "path": "/professor/"
+      },
+      {
+        "title": "Students",
+        "path": "/people/"
+      },
+      {
+        "title": "Alumni",
+        "path": "/alumni/"
+      }
+    ]
+  },
+  "publication_categories": [
+    "International Journals",
+    "International Conferences",
+    "Domestic Journals",
+    "Domestic Conferences"
+  ],
+  "content": {
+    "professor": "content/pages/professor.md",
+    "research": "content/pages/research-fields.md",
+    "people": "content/people.json",
+    "videos": "content/videos.json",
+    "news": "content/news/",
+    "join_us": "content/pages/join-us.md"
+  },
+  "source_notes": [
+    "The homepage body was empty; its full lab name and hero image are preserved here.",
+    "Projects collection and bibliography were theme examples. Actual projects and publications are preserved in professor.md.",
+    "Original routes describe the previous site and do not enable deployment."
+  ]
+}

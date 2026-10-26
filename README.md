@@ -1,555 +1,136 @@
-# al-folio
-
-<div align="center">
-
-[![Preview](readme_preview/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)
-
-**A simple, clean, and responsive [Jekyll](https://jekyllrb.com/) theme for academics.**
-
----
-
-[![deploy](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml/badge.svg)](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml)
-[![Maintainers](https://img.shields.io/badge/maintainers-4-success.svg)](#maintainers)
-[![GitHub contributors](https://img.shields.io/github/contributors/alshedivat/al-folio.svg)](https://github.com/alshedivat/al-folio/graphs/contributors/)
-
-[![Docker Image Version](https://img.shields.io/docker/v/amirpourmand/al-folio?sort=semver&label=docker%20image&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
-[![Docker Image Size](https://img.shields.io/docker/image-size/amirpourmand/al-folio?sort=date&label=docker%20image%20size&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/amirpourmand/al-folio?color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
-
-[![GitHub release](https://img.shields.io/github/v/release/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/alshedivat/al-folio?color=blue)](https://github.com/alshedivat/al-folio/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/fork)
-
-[![Code Wiki](https://img.shields.io/badge/Code_Wiki-ask_about_repo-blue?logo=googlegemini)](https://codewiki.google/github.com/alshedivat/al-folio)
-[![DeepWiki](https://img.shields.io/badge/DeepWiki-ask_about_repo-lightcyan)](https://deepwiki.com/alshedivat/al-folio)
-
-</div>
-
-## User community
-
-The vibrant community of **al-folio** users is growing!
-Academics around the world use this theme for their homepages, blogs, lab pages, as well as webpages for courses, workshops, conferences, meetups, and more.
-Check out the community webpages below.
-Feel free to add your own page(s) by sending a PR.
-
-<table>
-<tr>
-<td>Academics</td>
-<td>
-<a href="https://martinbulla.github.io" target="_blank">★</a>
-<a href="https://maruan.alshedivat.com" target="_blank">★</a>
-<a href="https://www.cs.columbia.edu/~chen1ru/" target="_blank">★</a>
-<a href="https://maithraraghu.com" target="_blank">★</a>
-<a href="https://platanios.org" target="_blank">★</a>
-<a href="https://otiliastr.github.io" target="_blank">★</a>
-<a href="https://www.maths.dur.ac.uk/~sxwc62/" target="_blank">★</a>
-<a href="https://jessachandler.com/" target="_blank">★</a>
-<a href="https://mayankm96.github.io/" target="_blank">★</a>
-<a href="https://markdean.info/" target="_blank">★</a>
-<a href="https://kakodkar.github.io/" target="_blank">★</a>
-<a href="https://sahirbhatnagar.com/" target="_blank">★</a>
-<a href="https://spd.gr/" target="_blank">★</a>
-<a href="https://jay-sarkar.github.io/" target="_blank">★</a>
-<a href="https://aborowska.github.io/" target="_blank">★</a>
-<a href="https://aditisgh.github.io/" target="_blank">★</a>
-<a href="https://alexhaydock.co.uk/" target="_blank">★</a>
-<a href="https://alixkeener.net/" target="_blank">★</a>
-<a href="https://andreea7b.github.io/" target="_blank">★</a>
-<a href="https://rishabhjoshi.github.io/" target="_blank">★</a>
-<a href="https://sheelabhadra.github.io/" target="_blank">★</a>
-<a href="https://giograno.me/" target="_blank">★</a>
-<a href="https://immsrini.github.io/" target="_blank">★</a>
-<a href="https://apooladian.github.io/" target="_blank">★</a>
-<a href="https://chinmoy-dutta.github.io/" target="_blank">★</a>
-<a href="https://liamcli.com/" target="_blank">★</a>
-<a href="https://yoonholee.com/" target="_blank">★</a>
-<a href="https://zrqiao.github.io/" target="_blank">★</a>
-<a href="https://abstractgeek.github.io/" target="_blank">★</a>
-<a href="https://www.compphys.de/" target="_blank">★</a>
-<a href="https://julianstreyczek.github.io" target="_blank">★</a>
-<a href="https://sdaza.com" target="_blank">★</a>
-<a href="https://niweera.gq" target="_blank">★</a>
-<a href="https://www.alihkw.com" target="_blank">★</a>
-<a href="https://amirpourmand.ir" target="_blank">★</a>
-<a href="https://scottleechua.github.io" target="_blank">★</a>
-<a href="https://sk1y101.github.io" target="_blank">★</a>
-<a href="https://yyang768osu.github.io" target="_blank">★</a>
-<a href="https://veedata.github.io" target="_blank">★</a>
-<a href="https://K-Wu.github.io" target="_blank">★</a>
-<a href="https://amalawilson.com" target="_blank">★</a>
-<a href="https://tirtharajdash.github.io" target="_blank">★</a>
-<a href="https://carolinacarreira.github.io" target="_blank">★</a>
-<a href="https://manandey.github.io" target="_blank">★</a>
-<a href="https://johanneshoerner.github.io" target="_blank">★</a>
-<a href="https://ioannismavromatis.com" target="_blank">★</a>
-<a href="https://taidnguyen.github.io" target="_blank">★</a>
-<a href="https://lbugnon.github.io" target="_blank">★</a>
-<a href="https://joahannes.github.io" target="_blank">★</a>
-<a href="https://dominikstrb.github.io" target="_blank">★</a>
-<a href="https://tylerbarna.com" target="_blank">★</a>
-<a href="https://daviddmc.github.io/" target="_blank">★</a>
-<a href="https://andreaskuster.ch/" target="_blank">★</a>
-<a href="https://ellisbrown.github.io/" target="_blank">★</a>
-<a href="https://djherron.github.io/" target="_blank">★</a>
-<a href="https://rodosingh.github.io/" target="_blank">★</a>
-<a href="https://vdivakar.github.io/" target="_blank">★</a>
-<a href="https://george-gca.github.io/" target="_blank">★</a>
-<a href="https://bashirkazimi.github.io/" target="_blank">★</a>
-<a href="https://dohaison.github.io/" target="_blank">★</a>
-<a href="https://raphaaal.github.io/" target="_blank">★</a>
-<a href="https://varuniyer.info/" target="_blank">★</a>
-<a href="https://yukimasano.github.io/" target="_blank">★</a>
-<a href="https://hashe037.github.io/" target="_blank">★</a>
-<a href="https://wang-boyu.github.io/" target="_blank">★</a>
-<a href="https://qingqingchen.info" target="_blank">★</a>
-<a href="https://bajinsheng.github.io/" target="_blank">★</a>
-<a href="https://www.silviofanzon.com/" target="_blank">★</a>
-<a href="https://kaikaiyao.github.io/" target="_blank">★</a>
-<a href="https://alchemz.github.io/" target="_blank">★</a>
-<a href="https://samadamday.com/" target="_blank">★</a>
-<a href="https://fanpu.io/" target="_blank">★</a>
-<a href="https://abigalekim.github.io/" target="_blank">★</a>
-<a href="https://lucasresck.github.io/" target="_blank">★</a>
-<a href="https://users.wpi.edu/~lfichera/" target="_blank">★</a>
-<a href="https://anmspro.github.io/" target="_blank">★</a>
-<a href="https://berlyne.net/" target="_blank">★</a>
-<a href="https://filippomazzoli.github.io/" target="_blank">★</a>
-<a href="https://www.escontrela.me/" target="_blank">★</a>
-<a href="https://raffaem.github.io/" target="_blank">★</a>
-<a href="https://cbueth.de/" target="_blank">★</a>
-<a href="https://kyleaoman.github.io/" target="_blank">★</a>
-<a href="https://decwest.github.io/" target="_blank">★</a>
-<a href="https://www.jedburkat.com" target="_blank">★</a>
-<a href="https://hrzhang.me" target="_blank">★</a>
-<a href="https://kudhru.github.io/" target="_blank">★</a>
-<a href="https://mbarbetti.github.io/" target="_blank">★</a>
-<a href="https://www.zhivotenko.com/" target="_blank">★</a>
-<a href="https://giordanodaloisio.github.io/" target="_blank">★</a>
-<a href="https://aadityaura.github.io/" target="_blank">★</a>
-<a href="https://abhinav-mehta.github.io/" target="_blank">★</a>
-<a href="https://shubhashisroydipta.com/" target="_blank">★</a>
-<a href="https://astanziola.github.io" target="_blank">★</a>
-<a href="https://tinkerer.in" target="_blank">★</a>
-<a href="https://afraniomelo.github.io/en/" target="_blank">★</a>
-<a href="https://jonaruthardt.github.io" target="_blank">★</a>
-<a href="https://www.zla.app/" target="_blank">★</a>
-<a href="https://stavros.github.io" target="_blank">★</a>
-<a href="https://ericslyman.com" target="_blank">★</a>
-<a href="https://ztjona.github.io/" target="_blank">★</a>
-<a href="https://chrischoi314.github.io" target="_blank">★</a>
-<a href="https://riccobelli.faculty.polimi.it" target="_blank">★</a>
-<a href="https://kishanved.tech/" target="_blank">★</a>
-<a href="https://abhilesh.github.io/" target="_blank">★</a>
-<a href="https://jackjburnett.github.io/" target="_blank">★</a>
-<a href="https://physics-morris.github.io/" target="_blank">★</a>
-<a href="https://sraf.ir" target="_blank">★</a>
-<a href="https://acad.garywei.dev/" target="_blank">★</a>
-<a href="https://tonideleo.github.io/" target="_blank">★</a>
-<a href="https://alonkellner.com/" target="_blank">★</a>
-<a href="https://berylbir.github.io/" target="_blank">★</a>
-<a href="https://global-anomaly.github.io/" target="_blank">★</a>
-<a href="https://mingsun-kaust.github.io/" target="_blank">★</a>
-<a href="https://hdocmsu.github.io/" target="_blank">★</a>
-<a href="https://trandangtrungduc.github.io/" target="_blank">★</a>
-<a href="https://kinghowler.github.io/" target="_blank">★</a>
-<a href="https://anurye.github.io/" target="_blank">★</a>
-<a href="https://charlie-xiao.github.io/" target="_blank">★</a>
-<a href="https://giuseppeperelli.github.io/" target="_blank">★</a>
-<a href="https://shlee-lab.github.io/" target="_blank">★</a>
-<a href="https://devos50.github.io/" target="_blank">★</a>
-<a href="https://vmooers.github.io/" target="_blank">★</a>
-<a href="https://jpfonseca.github.io/" target="_blank">★</a>
-<a href="https://dmitryryumin.github.io/" target="_blank">★</a>
-<a href="https://alexiglad.github.io/" target="_blank">★</a>
-<a href="https://nishanthjkumar.com/" target="_blank">★</a>
-<a href="https://joszuijderwijk.nl/" target="_blank">★</a>
-<a href="https://d-jiao.github.io/" target="_blank">★</a>
-<a href="https://cbuelt.github.io/" target="_blank">★</a>
-<a href="https://mehrdad-noori.github.io/" target="_blank">★</a>
-<a href="https://arthurclerjon.github.io/" target="_blank">★</a>
-<a href="https://eilamshapira.com/" target="_blank">★</a>
-<a href="https://freifrauvonbleifrei.github.io/" target="_blank">★</a>
-<a href="https://thomasbourke1.github.io/" target="_blank">★</a>
-<a href="https://siddharthsule.com/" target="_blank">★</a>
-<a href="https://waynexucn.github.io/" target="_blank">★</a>
-<a href="https://zlatanajanovic.com/" target="_blank">★</a>
-<a href="https://mchadolias.github.io/" target="_blank">★</a>
-<a href="https://syanyong.github.io/" target="_blank">★</a>
-<a href="https://jucheval.github.io/" target="_blank">★</a>
-<a href="https://j1yoo.github.io/" target="_blank">★</a>
-<a href="https://zhoji.github.io/" target="_blank">★</a>
-<a href="https://smsnobin77.github.io/" target="_blank">★</a>
-<a href="https://dongkyu-lee.info/" target="_blank">★</a>
-</td>
-</tr>
-<tr>
-<td>Labs</td>
-<td>
-<a href="https://www.haylab.caltech.edu/" target="_blank">★</a>
-<a href="https://sjkimlab.github.io/" target="_blank">★</a>
-<a href="https://systemconsultantgroup.github.io/scg-folio/" target="_blank">★</a>
-<a href="https://decisionlab.ucsf.edu/" target="_blank">★</a>
-<a href="https://programming-group.com/" target="_blank">★</a>
-<a href="https://sailing-lab.github.io/" target="_blank">★</a>
-<a href="https://inbt.jhu.edu/epidiagnostics/" target="_blank">★</a>
-<a href="https://www.nuesl.org/" target="_blank">★</a>
-<a href="https://big-culture.github.io/" target="_blank">★</a>
-<a href="https://martinbulla.github.io/bullab/" target="_blank">★</a>
-<a href="https://gpforesteyes.github.io/" target="_blank">★</a>
-</td>
-</tr>
-<tr>
-<td>Courses</td>
-<td>
-CMU PGM (<a href="https://sailinglab.github.io/pgm-spring-2019/" target="_blank">S-19</a>) <br>
-CMU DeepRL (<a href="https://cmudeeprl.github.io/403_website/" target="_blank">S-21</a>, <a href="https://cmudeeprl.github.io/703website_f21/" target="_blank">F-21</a>, <a href="https://cmudeeprl.github.io/403website_s22/" target="_blank">S-22</a>, <a href="https://cmudeeprl.github.io/703website_f22/" target="_blank">F-22</a>, <a href="https://cmudeeprl.github.io/403website_s23/" target="_blank">S-23</a>, <a href="https://cmudeeprl.github.io/703website_f23/" target="_blank">F-23</a>) <br>
-CMU MMML (<a href="https://cmu-multicomp-lab.github.io/mmml-course/fall2020/" target="_blank">F-20</a>, <a href="https://cmu-multicomp-lab.github.io/mmml-course/fall2022/" target="_blank">F-22</a>) <br>
-CMU AMMML (<a href="https://cmu-multicomp-lab.github.io/adv-mmml-course/spring2022/" target="_blank">S-22</a>, <a href="https://cmu-multicomp-lab.github.io/adv-mmml-course/spring2023/" target="_blank">S-23</a>) <br>
-CMU ASI (<a href="https://cmu-multicomp-lab.github.io/asi-course/spring2023/" target="_blank">S-23</a>) <br>
-CMU Distributed Systems (<a href="https://andrew.cmu.edu/course/15-440/" target="_blank">S-24</a>)
-</td>
-</tr>
-<tr>
-<td>Conferences & workshops</td>
-<td>
-ICLR Blog Post Track (<a href="https://iclr-blogposts.github.io/2023/" target="_blank">2023</a>, <a href="https://iclr-blogposts.github.io/2024/about" target="_blank">2024</a>) <br>
-ML Retrospectives (NeurIPS: <a href="https://ml-retrospectives.github.io/neurips2019/" target="_blank">2019</a>, <a href="https://ml-retrospectives.github.io/neurips2020/" target="_blank">2020</a>; ICML: <a href="https://ml-retrospectives.github.io/icml2020/" target="_blank">2020</a>) <br>
-HAMLETS (NeurIPS: <a href="https://hamlets-workshop.github.io/" target="_blank">2020</a>) <br>
-ICBINB (NeurIPS: <a href="https://i-cant-believe-its-not-better.github.io/" target="_blank">2020</a>, <a href="https://i-cant-believe-its-not-better.github.io/neurips2021/" target="_blank">2021</a>) <br>
-Neural Compression (ICLR: <a href="https://neuralcompression.github.io/" target="_blank">2021</a>) <br>
-Score Based Methods (NeurIPS: <a href="https://score-based-methods-workshop.github.io/" target="_blank">2022</a>)<br>
-Images2Symbols (CogSci: <a href="https://images2symbols.github.io/" target="_blank"> 2022</a>) <br>
-Medical Robotics Junior Faculty Forum (ISMR: <a href="https://junior-forum-ismr.github.io/" target="_blank"> 2023</a>)<br>
-Beyond Vision: Physics meets AI (ICIAP: <a href="https://physicsmeetsai.github.io/beyond-vision/" target="_blank">2023</a>) <br>
-Workshop on Diffusion Models (NeurIPS: <a href="https://diffusionworkshop.github.io/" target="_blank">2023</a>) <br>
-Workshop on Structured Probabilistic Inference & Generative Modeling (ICML: <a href="https://spigmworkshop.github.io/" target="_blank">2023</a>, <a href="https://spigmworkshop2024.github.io/" target="_blank">2024</a>)
-</td>
-</tr>
-</table>
-
-## Lighthouse PageSpeed Insights
-
-### Desktop
-
-[![Google Lighthouse PageSpeed Insights](lighthouse_results/desktop/pagespeed.svg)](https://htmlpreview.github.io/?https://github.com/alshedivat/al-folio/blob/main/lighthouse_results/desktop/alshedivat_github_io_al_folio_.html)
-
-Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.web.dev/report?url=https%3A%2F%2Falshedivat.github.io%2Fal-folio%2F&form_factor=desktop)
-
-### Mobile
-
-[![Google Lighthouse PageSpeed Insights](lighthouse_results/mobile/pagespeed.svg)](https://htmlpreview.github.io/?https://github.com/alshedivat/al-folio/blob/main/lighthouse_results/mobile/alshedivat_github_io_al_folio_.html)
-
-Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.web.dev/report?url=https%3A%2F%2Falshedivat.github.io%2Fal-folio%2F&form_factor=mobile)
-
-## Table Of Contents
-
-<!--ts-->
-
-- [al-folio](#al-folio)
-  - [User community](#user-community)
-  - [Lighthouse PageSpeed Insights](#lighthouse-pagespeed-insights)
-    - [Desktop](#desktop)
-    - [Mobile](#mobile)
-  - [Table Of Contents](#table-of-contents)
-  - [Getting started](#getting-started)
-  - [Installing and Deploying](#installing-and-deploying)
-  - [Customizing](#customizing)
-  - [GitHub Copilot Agents](#github-copilot-agents)
-    - [Customization Agent](#customization-agent)
-    - [Documentation Agent](#documentation-agent)
-  - [Documentation](#documentation)
-  - [Features](#features)
-    - [Light/Dark Mode](#lightdark-mode)
-    - [CV](#cv)
-    - [People](#people)
-    - [Publications](#publications)
-    - [Collections](#collections)
-    - [Layouts](#layouts)
-      - [The iconic style of Distill](#the-iconic-style-of-distill)
-      - [Full support for math &amp; code](#full-support-for-math--code)
-      - [Photos, Audio, Video and more](#photos-audio-video-and-more)
-    - [Other features](#other-features)
-      - [GitHub's repositories and user stats](#githubs-repositories-and-user-stats)
-      - [Theming](#theming)
-      - [Social media previews](#social-media-previews)
-      - [Atom (RSS-like) Feed](#atom-rss-like-feed)
-      - [Related posts](#related-posts)
-      - [Code quality checks](#code-quality-checks)
-      - [GDPR Cookie Consent Dialog](#gdpr-cookie-consent-dialog)
-  - [FAQ](#faq)
-  - [Contributing](#contributing)
-    - [Maintainers](#maintainers)
-    - [All Contributors](#all-contributors)
-  - [Star History](#star-history)
-  - [License](#license)
-
-<!--te-->
-
-## Getting started
-
-**⚠️ Important: Use "Use this template" (not fork)**
-
-When creating your own website with al-folio, you have two options:
-
-- ✅ **Recommended:** Click "[Use this template](https://github.com/new?template_name=al-folio&template_owner=alshedivat)" – This creates a clean copy that is independent from the main al-folio repository. Changes you make to your site won't be accidentally submitted to al-folio as pull requests.
-- ❌ **Not recommended:** Forking the repository – This keeps a link to the main al-folio repo, making it easy to accidentally submit your personal site changes as contributions to our project.
-
-**If you already forked:** Don't worry! You can still work with your fork normally. Just make sure to:
-
-1. Make changes on a dedicated branch (e.g., `my-site-updates`)
-2. When pushing changes, always verify you're pushing to **your own repository**, not the main al-folio repository
-3. Never create pull requests to `alshedivat/al-folio` unless you're intentionally contributing improvements that benefit all users
-
-For quick setup, see [QUICKSTART.md](QUICKSTART.md).
-
-Want to learn more about Jekyll? Check out [this tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/). Why Jekyll? Read [Andrej Karpathy's blog post](https://karpathy.github.io/2014/07/01/switching-to-jekyll/)! Why write a blog? Read [Rachel Thomas blog post](https://medium.com/@racheltho/why-you-yes-you-should-blog-7d2544ac1045).
-
-## Installing and Deploying
-
-For installation and deployment details please refer to [INSTALL.md](INSTALL.md).
-
-## Customizing
-
-For customization details please refer to [CUSTOMIZE.md](CUSTOMIZE.md).
-
-## GitHub Copilot Agents
-
-This repository includes two specialized GitHub Copilot agents to enhance your development experience:
-
-### Customization Agent
-
-The **Customization Agent** helps you personalize your al-folio website by:
-
-- Guiding you through configuration changes step-by-step
-- Modifying files directly in your repository
-- Explaining technical concepts in plain language (great for users without coding experience)
-- Assisting with common tasks like updating your CV, adding publications, creating blog posts, and customizing themes
-
-See [CUSTOMIZE.md § GitHub Copilot Customization Agent](CUSTOMIZE.md#github-copilot-customization-agent) for detailed usage instructions.
-
-### Documentation Agent
-
-The **Documentation Agent** maintains clear and up-to-date project documentation by:
-
-- Updating documentation files when features change
-- Writing in a style accessible to academics and researchers
-- Keeping documentation synchronized with the codebase
-- Following documentation best practices
-
-See [CONTRIBUTING.md § GitHub Copilot Agents](CONTRIBUTING.md#github-copilot-agents) for more information.
-
-> **Requirements:** Both agents require a [GitHub Copilot](https://github.com/features/copilot) subscription. For more information about GitHub Copilot and how to use agents, see the [GitHub Copilot documentation](https://docs.github.com/en/copilot).
-
-## Documentation
-
-Comprehensive guides for all aspects of your al-folio website:
-
-- **[Quick Start](QUICKSTART.md)** – Get running in 5 minutes
-- **[Installation & Deployment](INSTALL.md)** – Set up your site on GitHub Pages or other platforms
-- **[Customization Guide](CUSTOMIZE.md)** – Personalize your website (CVs, publications, themes, etc.)
-- **[Troubleshooting](TROUBLESHOOTING.md)** – Fix common issues (deployment, build, styling, content)
-- **[FAQ](FAQ.md)** – Frequently asked questions and solutions
-- **[Analytics](ANALYTICS.md)** – Add website analytics and visitor tracking
-- **[SEO Guide](SEO.md)** – Optimize for search engines and improve discoverability
-
-## Features
-
-### Light/Dark Mode
-
-This template has a built-in light/dark mode. It detects the user preferred color scheme and automatically switches to it. You can also manually switch between light and dark mode by clicking on the sun/moon icon in the top right corner of the page.
-
-<p align="center">
-<img src="readme_preview/light.png" width=400>
-<img src="readme_preview/dark.png" width=400>
-</p>
-
----
-
-### CV
-
-Your CV can be generated in one of two modern formats: **RenderCV** (recommended, with automatic PDF generation) or **JSONResume** (standardized JSON format). You can use both simultaneously and switch between them, or maintain just the one you prefer.
-
-[![CV Preview](readme_preview/cv.png)](https://alshedivat.github.io/al-folio/cv/)
-
-For setup and customization details, see [Modifying the CV information](CUSTOMIZE.md#modifying-the-cv-information) in [CUSTOMIZE.md](CUSTOMIZE.md).
-
----
-
-### People
+# ICML 연구실 웹사이트
 
-You can create a people page if you want to feature more than one person. Each person can have its own short bio, profile picture, and you can also set if every person will appear at the same or opposite sides.
+Intelligent Control & Machine Learning Lab, Incheon National University.
 
-[![People Preview](readme_preview/people.png)](https://alshedivat.github.io/al-folio/people/)
+기존 al-folio를 제거하고 보존한 연구실 자료를 Academic Pages의 학술 사이트 구조에 연결한 Jekyll 사이트입니다. 2026-10-26 사용자가 Academic Pages 적용과 Jekyll 사용을 승인했습니다. 현재는 로컬 검토용 첫 시안이며 원격 배포는 하지 않았습니다.
 
----
+## 현재 사이트와 실행
 
-### Publications
+Academic Pages의 상단 메뉴·왼쪽 소개·오른쪽 본문 구조를 연구실용으로 재구성했습니다. 로고, 연구 분야, 뉴스, 연구 영상과 대표 논문을 홈에 배치하고 Research, Publications, Projects, People, News, Videos, Join Us 및 Professor·Alumni 상세 페이지를 제공합니다. 논문 페이지에는 전체 목록 검색이 있습니다. 데모 인물·논문·과제는 가져오지 않았습니다.
 
-Your publications page is generated automatically from your BibTeX bibliography. You can customize publication display, add extra information like PDFs, and control sorting behavior.
+기술 구성은 **Jekyll 4.4 / Liquid / HTML / CSS / JavaScript**입니다. Python 3.10 이상(추가 패키지 없음)이 `content/`를 읽어 `_data/lab.json`과 `_pages/`를 생성하며, Jekyll이 `_site/`를 빌드합니다. 원문을 수정하지 않고 교수 이력과 연구 소개 전체를 렌더링합니다. 출처와 라이선스는 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)에 있습니다.
 
-[![Publications Preview](readme_preview/publications.png)](https://alshedivat.github.io/al-folio/publications/)
+이 PC에는 저장소 내부 `.tools/`에 로컬 Ruby와 빌드 라이브러리를 준비했습니다. 시스템 전체에 설치하지 않았으며 Git에도 포함되지 않습니다. 이 작업 폴더에서는 다음 명령으로 빌드·검증·미리보기를 실행합니다.
 
-For setup, BibTeX field documentation, and customization options, see [Adding a new publication](CUSTOMIZE.md#adding-a-new-publication) and [Managing publication display](CUSTOMIZE.md#managing-publication-display) in [CUSTOMIZE.md](CUSTOMIZE.md).
+```powershell
+python scripts/site.py preview
+```
 
----
+미리보기 주소는 `http://127.0.0.1:8765/`입니다. 종료는 `Ctrl+C`, 포트 변경은 `--port 8766`입니다. 실행 중 수정 사항을 반영하려면 별도 터미널에서 `python scripts/site.py build`를 실행한 뒤 브라우저를 새로고침합니다. 이 PC에서는 4000 포트의 사용이 제한되어 8765를 기본값으로 정했습니다.
 
-### Collections
+```powershell
+python scripts/site.py build              # 데이터 생성 → Jekyll 빌드 → 보존·링크 검사
+python scripts/site.py serve              # 이미 생성한 _site/만 로컬에서 제공
+python scripts/validate.py --require-build
+```
 
-This Jekyll theme implements `collections` to organize content into categories. The theme comes with default collections for `news`, `projects`, `books`, and `teachings`. You can easily create your own collections for apps, stories, courses, or any other creative work.
+슬라이드 동작 검증은 Node.js가 있는 환경에서 `node scripts/test_carousel.mjs`로 실행합니다. 추가 패키지 없이 자동 전환·버튼·스와이프·일시정지·접근성 상태를 검사하는 DOM/타이머 모의 테스트이며 실제 브라우저 화면 검증은 아닙니다. Node.js는 사이트 빌드나 미리보기 실행에는 필요하지 않습니다.
 
-[![Projects Preview](readme_preview/projects.png)](https://alshedivat.github.io/al-folio/projects/)
+새 PC에서는 Python 3.10 이상, Ruby/Bundler(Windows는 Ruby+Devkit)를 준비한 뒤 아래 명령을 실행합니다.
 
-For detailed instructions on creating and customizing collections, see [Adding Collections](CUSTOMIZE.md#adding-collections) in [CUSTOMIZE.md](CUSTOMIZE.md).
+```text
+bundle install
+python scripts/site.py preview
+```
 
----
+표준 Jekyll 명령을 직접 실행할 수도 있습니다.
 
-### Layouts
+```text
+python scripts/prepare.py
+bundle exec jekyll build
+python scripts/validate.py --require-build
+python scripts/site.py serve
+```
 
-**al-folio** comes with stylish layouts for pages and blog posts.
+로컬 Windows용 `scripts/build_jekyll.rb`는 같은 Jekyll 엔진으로 정적 빌드를 수행하고, 개발 서버의 네이티브 live-reload 의존성만 사용하지 않습니다. 미리보기 서버는 Python이며 자동 새로고침은 없습니다.
 
-#### The iconic style of Distill
+첫 시안은 이 로컬 빌드 경로로 검증했습니다. 전체 `bundle install`은 이 PC에서 완료하지 않았으며, 표준 설치에는 Ruby+Devkit 등 해당 플랫폼의 빌드 도구가 필요합니다. 현재 자동 검증은 원문·이미지 보존, 내부 링크 및 HTTP 응답을 포함합니다. 브라우저 자동 제어 연결을 사용할 수 없어 화면 캡처와 실제 브라우저 상호작용 검증은 수행하지 못했습니다.
 
-The theme allows you to create blog posts in the [distill.pub](https://distill.pub/) style:
+배포 워크플로와 배포 명령은 아직 추가하지 않았습니다. GitHub Pages에 배포할 때는 Python 데이터 생성까지 포함한 빌드 과정과 `_site/` 업로드가 필요합니다. 사용자가 배포를 요청하기 전에는 커밋·푸시·배포하지 않습니다.
 
-[![Distill Preview](readme_preview/distill.png)](https://alshedivat.github.io/al-folio/blog/2021/distill/)
+## 수정 위치와 검증
 
-For more details on how to create distill-styled posts using `<d-*>` tags, please refer to [the example](https://alshedivat.github.io/al-folio/blog/2021/distill/).
+- 원문·연결: `content/`, 이미지 원본: `assets/img/`
+- 홈 슬라이드: `content/platforms.json`에서 순서·사진·설명·핵심 기술 또는 연구 분야·영상 이동 링크를 수정합니다. `source_details`와 `source_notes`는 출처 보존용이며 화면에 표시하지 않습니다.
+- 화면 구성: `_layouts/`, 공통 메뉴·사이드바·푸터: `_includes/`
+- 메뉴: `_data/navigation.yml`, 스타일: `assets/css/lab.css`, 동작: `assets/js/lab.js`
+- 프로필 사진: 교수·학생·졸업생과 사진 없는 자리 모두 데스크톱 180×225px, 600px 이하 화면 120×150px로 통일합니다. 교수 상세 페이지도 같은 규격을 사용하며 사진 원본은 수정하지 않습니다.
+- 자동 생성물: `_data/lab.json`, `_pages/`, `_site/` — 직접 수정하지 않습니다.
+- 검사: 원본 파일 해시, 논문 30개와 대표 논문 6개, 연구 이미지 10개, 구성원·영상·뉴스 연결, 생성된 페이지의 내부 링크와 앵커, 본문·이미지 보존을 확인합니다.
 
-#### Full support for math & code
+`.cache/icml-content-baseline.json`은 첫 빌드의 로컬 보존 기준입니다. 사용자가 원문 수정을 승인한 경우 변경 내용을 검토한 뒤 해당 로컬 기준을 갱신해야 합니다. `content/inventory.json`은 별도의 과거 보존 기록이며 현재 자료를 덮어쓰는 기준이 아닙니다.
 
-**al-folio** supports fast math typesetting through [MathJax](https://www.mathjax.org/) and code syntax highlighting using [GitHub style](https://github.com/jwarby/jekyll-pygments-themes). Also supports [chartjs charts](https://www.chartjs.org/), [mermaid diagrams](https://mermaid-js.github.io/mermaid/#/), and [TikZ figures](https://tikzjax.com/).
+## 보존한 자료
 
-<p align="center">
-<a href="https://alshedivat.github.io/al-folio/blog/2015/math/" target="_blank"><img src="readme_preview/math.png" width=400></a>
-<a href="https://alshedivat.github.io/al-folio/blog/2015/code/" target="_blank"><img src="readme_preview/code.png" width=400></a>
-</p>
+| 위치 | 내용 |
+| --- | --- |
+| [content/site.json](content/site.json) | 연구실 이름, 사이트 주소, 연락처, 기존 메뉴·경로, 홈 이미지 연결 |
+| [content/pages/professor.md](content/pages/professor.md) | 교수 소개, 학력·경력·강의·과제·논문·특허·학술활동·수상 원문 |
+| [content/pages/research-fields.md](content/pages/research-fields.md) | 연구 분야 3개, 설명과 연구 이미지 10개의 연결 |
+| [content/pages/join-us.md](content/pages/join-us.md) | 대학원 진학·학부연구 참여 모집과 연구실 홍보, 교수 이메일 문의 안내 |
+| [content/people.json](content/people.json) | 현재 학부연구생 3명과 졸업생 1명의 이름·소속 학과·사진·소개 연결 |
+| [content/people/](content/people/) | 김예훈·길순형·장윤서 소개 각 1개와 졸업생 소개 1개 |
+| [content/news/](content/news/) | KAIST Mobility Challenge 대상 브릿지경제 보도와 RoboCup 2026 SML 우승 중앙일보 보도 |
+| [content/videos.json](content/videos.json) | 연구 영상 3개의 YouTube 주소·제목·캡션 |
+| [content/platforms.json](content/platforms.json) | 홈 연구 플랫폼 5개의 사진·설명·기술 또는 연구 분야·영상 이동 링크와 제공 원문·근거 |
+| [assets/img/](assets/img/) | 연구실 사진·로고·연구 도표·포스터 원본 27개 |
+| [content/inventory.json](content/inventory.json) | 원본·새 경로, SHA-256, 제거 분류와 확인 사항 |
 
-#### Photos, Audio, Video and more
+기존 이미지 17개는 이름·경로·파일 내용이 원본과 동일합니다. 새로 제공된 `yh_kim.jpg`, `ys_jang.jpg`, 연구 사진 5개, RoboCup 우승 사진 1개와 새 로고 2개는 파일 내용을 변경하지 않고 `assets/img/`로 옮겨 현재 이미지가 27개입니다. 기존 연구실 로고 `icmllogo.png`, 행사 사진 `kaistimg.png`, 한국어 연구 포스터 `labhomepage.png`도 원본 그대로 보존합니다. 시현의 소개 원본 1개를 유지하고, 사용자가 삭제한 우진·다인·기현의 소개와 사진은 구성원 목록에서도 제외했습니다.
 
-Photo formatting is made simple using [Bootstrap's grid system](https://getbootstrap.com/docs/4.4/layout/grid/). Easily create beautiful grids within your blog posts and project pages, also with support for [video](https://alshedivat.github.io/al-folio/blog/2023/videos/) and [audio](https://alshedivat.github.io/al-folio/blog/2023/audios/) embeds:
+사이드바에는 사용자가 최종 선택한 네이비 배경 가로형 로고 `icml-logo-wide-dark.png`를 사용합니다. 원래 파일명은 `네이비 배경의 ICML LAB 로봇 로고.png`이며 1774×887 원본을 이름만 바꿔 저장했습니다. 앞서 저장한 흰색 정사각형 로고 `icml-logo-square-light.png`(원래 파일명 `중앙 정렬 ICML LAB 로봇 로고-3.png`, 1254×1254)도 유지하여 새 로고 원본은 총 2개입니다. 기존 `icmllogo.png` 역시 덮어쓰지 않습니다. 현재 표시에는 최종 선택을 적용하고 이전 선택·저장 요청은 `content/inventory.json`의 과거 기록으로 보존합니다.
 
-<p align="center">
-  <a href="https://alshedivat.github.io/al-folio/projects/1_project/">
-    <img src="readme_preview/photos-screenshot.png" width="75%">
-  </a>
-</p>
+새 연구 사진 `erp42-autonomous-driving.webp`, `robocup-sml-mobile-manipulator.webp`, `smart-stroller.webp`는 홈 상단 슬라이드에 사용합니다. 홈의 **Research in motion** 영역은 `content/videos.json`에 등록된 영상 중 앞의 3개를 같은 크기의 16:9 YouTube 플레이어로 보여줍니다. 현재는 KAIST 협력 자율주행, AMR·매니퓰레이터, ERP42 자율주행 영상이며 원래 제목·캡션·주소를 유지합니다. 화면 폭에 따라 3열·2열·1열로 배치되고, 홈에서 직접 재생하거나 YouTube 및 전체 영상 페이지로 이동할 수 있습니다. 사용자 제공 우승 사진 `인천대_TEAM_INU_로보컵_2026_SML_부문_세계_1위.png`는 `robocup-2026-sml-champions.png`로 이름만 바꿔 RoboCup 뉴스에 연결했습니다. 뉴스 날짜·제목·본문·출처와 기존 영상 주소·캡션은 유지하며, 새 이미지의 원래 이름과 SHA-256은 `content/inventory.json`의 후속 기록에 보존합니다.
 
----
+로봇개 사진 `KakaoTalk_20261026_153913472.jpg`와 드론 실험 플랫폼 사진 `KakaoTalk_20261026_153919475.jpg`는 각각 `quadruped-robot.jpg`, `drone-platform.jpg`로 이름만 바꿔 홈 상단 슬라이드에 추가했습니다. 원본 이미지의 파일 내용과 해상도는 유지하며 제조사·모델명은 추정하지 않습니다.
 
-### Other features
+홈 상단은 ERP-42 → Mobile Manipulator → Smart Stroller → Quadruped Robot → Drone Platform 순서의 5개 항목으로, 사진과 설명이 함께 옆으로 넘어가는 슬라이드입니다. 5초마다 자동 전환하며 이전·다음 버튼, 선택 점, 키보드 방향키, 모바일 스와이프와 재생·일시정지를 지원합니다. 마우스를 올리거나 키보드 포커스가 들어오면 자동 전환을 멈추고, 화면 밖이나 숨겨진 탭에서는 타이머를 쉬게 합니다. 움직임 줄이기 설정에서는 자동 재생을 시작하지 않으며, JavaScript가 없어도 다섯 항목의 사진과 설명을 모두 볼 수 있습니다. 내용은 `content/platforms.json`, 구성은 `_layouts/home.html`, 표시와 동작은 `assets/css/lab.css` 및 `assets/js/lab.js`에서 수정합니다.
 
-#### GitHub's repositories and user stats
+모든 슬라이드에 영상 이동 링크를 제공합니다. ERP-42는 해당 영상(`/videos/#video-3`), Mobile Manipulator는 관련 영상(`/videos/#video-2`)으로 이동합니다. 전용 영상이 없는 Smart Stroller·Quadruped Robot·Drone Platform은 사용자 요청에 따라 전체 영상 페이지(`/videos/`)로 이동하며 **Browse research videos**로 표시합니다. 없는 영상을 새로 등록하거나 특정 플랫폼의 영상으로 오인하게 연결하지 않습니다.
 
-**al-folio** displays GitHub repositories and user stats on the `/repositories/` page using [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) and [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy).
+ERP-42와 Smart Stroller의 두 문장 설명과 **Core technology**는 사용자가 제공한 내용을 반영했고, 제공 원문 전체는 `content/platforms.json`의 `source_details`에 보존합니다. 다른 플랫폼의 **Research focus**는 기존 연구 소개·관련 영상·제공 사진을 근거로 합니다. 드론의 관련 UAV 연구 설명은 사진 속 실험 장치에 특정 논문 알고리즘을 적용했다는 주장이 아니며, 세부 근거는 `source_notes`에 기록합니다.
 
-[![Repositories Preview](readme_preview/repositories.png)](https://alshedivat.github.io/al-folio/repositories/)
+교수·연구 소개는 글과 의미 있는 HTML 구조를 유지하면서 테마의 CSS, 클래스, Liquid 표현식과 표시 설정을 제거했습니다. 이미지 경로와 대체 텍스트, 이메일 링크, 모든 문구와 목록 순서를 보존했습니다. 홈 본문은 원래 비어 있었으며 연구실 전체 명칭과 홈 이미지 연결은 `site.json`에 있습니다.
 
-To configure which repositories and GitHub profiles to display, see [Modifying the user and repository information](CUSTOMIZE.md#modifying-the-user-and-repository-information) in [CUSTOMIZE.md](CUSTOMIZE.md).
+사용자 확인에 따라 학부연구생은 **김예훈 → 길순형 → 장윤서** 순서의 현재 참여 구성원(`status: current`)입니다. 김예훈·길순형은 전기공학과(Department of Electrical Engineering), 장윤서는 임베디드 시스템 공학과(Department of Embedded Systems Engineering)로 표시합니다. 김예훈은 `yh_kim.jpg`와 `content/people/about_yh_kim.md`를 연결했습니다. 장윤서는 `ys_jang.jpg`와 `content/people/about_ys_jang.md`에 이메일 `jyoonseo45@gmail.com`, 관심분야 Robot Control / Robot Manipulators / Robot Path Planning을 연결했습니다. 길순형은 `content/people/about_sh_kil.md`에 이메일 `kilsh1210@inu.ac.kr`, 관심분야 Drone Swarm Control / Reinforcement Learning을 연결했습니다. 길순형의 사진은 아직 받지 않아 `image: null`로 두고 화면에는 이름의 첫 글자를 사용합니다. 모든 프로필 이메일은 클릭 가능한 메일 링크입니다. 졸업생의 기존 연결은 유지합니다.
 
----
+Join Us는 **대학원 진학(석사·박사과정)과 학부연구 참여**를 함께 안내하는 한국어 모집·홍보 페이지입니다. 연구 분야, 실제 로봇 사진, 연구 영상·논문·구성원 링크, 교수님 이메일 `mh.lee@inu.ac.kr` 문의 버튼을 제공합니다. 자기소개·관심 분야·진학 또는 참여 희망 시기는 문의 시 참고 안내이며 별도 성적 기준, 모집 마감일, 지원금이나 합류 일정을 임의로 정하지 않았습니다. 모집 안내는 `content/pages/join-us.md`에서 수정합니다.
 
-#### Theming
+## 뉴스 작성 형식
 
-**al-folio** offers a variety of beautiful theme colors to choose from. The default is purple, but you can customize colors, fonts, spacing, and more to match your style.
+모든 뉴스는 `content/news/YYYY-MM-DD-slug.md`에 저장하고 다음 항목을 같은 순서로 작성합니다.
 
-For detailed customization instructions, see [Changing theme color](CUSTOMIZE.md#changing-theme-color) and [Customizing fonts, spacing, and more](CUSTOMIZE.md#customizing-fonts-spacing-and-more) in [CUSTOMIZE.md](CUSTOMIZE.md).
+`title`, `date`, `image`, `source`, `source_title`, `source_url`, `source_date`, `date_source_url`
 
----
+- `title`: 팀 이름과 성과를 담은 영어 제목. 원문 제목은 `source_title`에 원문 언어로 보존합니다.
+- `date`: 뉴스의 기준 날짜. 기존 뉴스 날짜를 우선하고, 신규 보도만 있는 경우 확인된 기사 날짜를 사용합니다.
+- `source_date`: 기사 발행 날짜. `date`와 함께 `YYYY-MM-DD`로 표기합니다.
+- `image`: 기존 로컬 이미지 경로. 사용할 이미지가 없으면 `null`로 둡니다.
+- `source`: 원문 매체명, `source_url`: 원문 기사 URL, `date_source_url`: 기사 날짜를 확인한 URL.
+- 본문은 영어 요약 두 문단(성과·대회 정보 → 연구실·지도교수·참여자 관련 내용) 뒤 원문 링크 한 줄로 통일합니다.
+- 원문 링크는 `[Read the coverage in 매체 영문명 (Korean)](원문 URL).` 형식으로 작성합니다.
+- 형식을 맞출 때 기존 사실·날짜·참가자 정보와 사진은 보존합니다.
 
-#### Social media previews
+## 분석 결과
 
-**al-folio** supports Open Graph preview images on social media. When enabled, your site's pages display rich preview objects with images, titles, and descriptions when shared.
+실제 논문은 기존 `_pages/professor.md`에 있었습니다. 전체 목록 30개와 대표 논문 표시 6개를 그대로 보존했습니다. 전체 목록은 국제학술지 게재·승인 9개, 심사 중 2개, Top AI Conferences 1개, 국제학회 10개, 국내학술지 2개, 국내학회 6개입니다. 대표 논문은 전체 목록과 중복되므로 36편으로 세지 않습니다.
 
-For setup and customization, see [Social media previews](CUSTOMIZE.md#social-media-previews) in [CUSTOMIZE.md](CUSTOMIZE.md).
+같은 파일의 연구 과제 14개, 강의 이력 9개 학기 행, 특허 출원 3개, 심사 학술지 9개, 초청 강연 4개, 수상 4개도 보존했습니다.
 
----
+기존 `_bibliography/papers.bib`는 Einstein 예제 3개였고 `_projects/`의 3개 항목도 테마 데모였습니다. `_data/`의 CV·연락처·공저자 정보, 블로그 31개, 예제 강의·도서·PDF·영상 역시 연구실 자료가 아니어서 제거했습니다. 프로젝트와 논문 페이지의 기존 경로·분류명은 `site.json`에 남아 있습니다.
 
-#### Atom (RSS-like) Feed
+Jekyll/Liquid 템플릿, 스타일·스크립트·폰트, Ruby/Node 의존성, Docker 설정, GitHub Actions, 테마 설명서와 미리보기도 제거했습니다. 기존 테마의 출처 기록으로 [LICENSE](LICENSE)를 보존했습니다.
 
-It generates an Atom (RSS-like) feed of your posts, useful for Atom and RSS readers. The feed is reachable simply by typing after your homepage `/feed.xml`. E.g. assuming your website mountpoint is the main folder, you can type `yourusername.github.io/feed.xml`
+## 원문대로 남긴 확인 사항
 
----
+- KAIST 대회의 공식 명칭에는 2025년이 포함되지만 수상자 발표는 2026-02-10입니다. [브릿지경제 기사](https://www.viva100.com/article/20260212501397)로 확인했습니다. 뉴스 날짜는 2026-02-10, 기사 발행일인 `source_date`는 2026-02-12로 구분하고 기존 사진을 유지했습니다.
+- 교수 주소는 `Room #251, Building 8`, 공통 연락처는 `Room 251, Bldg 8-B`로 서로 다릅니다.
+- 논문 심사 상태, 과제 기간, 재직·학위 정보는 기존 원문 기준이며 현재 상태로 갱신하지 않았습니다.
 
-#### Related posts
+## 보존 검증과 후속 작업
 
-By default, blog posts display related posts at the bottom. These are selected by finding the most recent posts that share tags with the current post. You can customize this behavior on a per-post or site-wide basis.
+정리 전 기준 커밋은 `3bbc154ef9835c5c67253086c605d54a236875b2`입니다. 원본 파일은 이 커밋의 Git 이력에서도 확인할 수 있습니다. 이번 정리에서는 커밋이나 원격 배포를 수행하지 않았습니다.
 
-For configuration details, see [Related posts](CUSTOMIZE.md#related-posts) in [CUSTOMIZE.md](CUSTOMIZE.md).
+최초 정리 시점에는 이미지 20개와 소개 원본 4개의 SHA-256, 교수·연구 본문, 이미지·링크와 JSON 연결을 검사했습니다. `content/inventory.json`의 `retained`, `migrated`, `outputs`는 그 시점의 기록이며 현재 파일 목록이 아닙니다. 이후 사용자 삭제와 뉴스 형식 변경은 `follow_up_changes`에 기록했습니다. 현재 구성원과 뉴스는 각각 `content/people.json`과 `content/news/`를 기준으로 사용합니다.
 
----
-
-#### Code quality checks
-
-Currently, we run some checks to ensure that the code quality and generated site are good. The checks are done using GitHub Actions and the following tools:
-
-- [Prettier](https://prettier.io/) - check if the formatting of the code follows the style guide
-- [lychee](https://lychee.cli.rs/) - check for broken links
-- [Axe](https://github.com/dequelabs/axe-core) (need to run manually) - do some accessibility testing
-
-We decided to keep `Axe` runs manual because fixing the issues are not straightforward and might be hard for people without web development knowledge.
-
----
-
-#### GDPR Cookie Consent Dialog
-
-**al-folio** includes a built-in, GDPR-compliant cookie consent dialog to ensure your website respects visitor privacy. The dialog is powered by [Vanilla Cookie Consent](https://cookieconsent.orestbida.com/) and integrates seamlessly with all supported analytics providers.
-
-When enabled, analytics scripts are blocked until the user explicitly consents, and user preferences are saved across visits. This is essential for websites serving visitors in the European Union and other regions with strict privacy regulations.
-
-For complete setup and customization details, see [GDPR Cookie Consent Dialog](#gdpr-cookie-consent-dialog) in [CUSTOMIZE.md](CUSTOMIZE.md).
-
-## FAQ
-
-For frequently asked questions, please refer to [FAQ.md](FAQ.md).
-
-## Contributing
-
-Contributions to al-folio are very welcome! Before you get started, please take a look at [the guidelines](CONTRIBUTING.md).
-
-If you would like to improve documentation or fix a minor inconsistency or bug, please feel free to send a PR directly to `main`. For more complex issues/bugs or feature requests, please open an issue using the appropriate template.
-
-### Maintainers
-
-Our most active contributors are welcome to join the maintainers team. If you are interested, please reach out!
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://maruan.alshedivat.com"><img src="https://avatars.githubusercontent.com/u/2126561?v=4" width="100px;" alt=""/><br /><sub><b>Maruan</b></sub></a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://rohandebsarkar.github.io"><img src="https://avatars.githubusercontent.com/u/50144004?v=4" width="100px;" alt=""/><br /><sub><b>Rohan Deb Sarkar</b></sub></a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://amirpourmand.ir"><img src="https://avatars.githubusercontent.com/u/32064808?v=4" width="100px;" alt=""/><br /><sub><b>Amir Pourmand</b></sub></a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://george-gca.github.io/"><img src="https://avatars.githubusercontent.com/u/31376482?v=4" width="100px;" alt=""/><br /><sub><b>George</b></sub></a></td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-### All Contributors
-
-<a href="https://contrib.rocks">
-  <img src="https://contrib.rocks/image?repo=alshedivat/al-folio&max=500&columns=24" />
-</a>
-
-## Star History
-
-<a href="https://star-history.com/#alshedivat/al-folio&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=alshedivat/al-folio&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=alshedivat/al-folio&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=alshedivat/al-folio&type=Date" />
-  </picture>
-</a>
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](https://github.com/alshedivat/al-folio/blob/main/LICENSE).
-
-Originally, **al-folio** was based on the [\*folio theme](https://github.com/bogoli/-folio) (published by [Lia Bogoev](https://liabogoev.com) and under the MIT license). Since then, it got a full re-write of the styles and many additional cool features.
+현재 사이트는 `content/`와 `assets/img/`를 입력으로 사용합니다. JSON의 파일 경로는 저장소 루트 기준이며 `/assets/...`는 사이트 루트 기준입니다. `site.json`의 기존 페이지 경로를 유지했습니다. 앞의 보존 기록은 al-folio 정리 당시의 작업 내역이며, 현재 실행 방식은 이 README의 「현재 사이트와 실행」을 기준으로 합니다.

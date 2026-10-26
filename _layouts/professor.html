@@ -1,0 +1,7 @@
+---
+layout: default
+---
+{% assign lab = site.data.lab %}
+<header class="page-heading"><p class="eyebrow">PEOPLE / PRINCIPAL INVESTIGATOR</p><h1 class="page-title">Professor</h1></header>
+<nav class="subnav" aria-label="People"><a href="{{ '/professor/' | relative_url }}" aria-current="page">Professor</a><a href="{{ '/people/' | relative_url }}">People</a><a href="{{ '/alumni/' | relative_url }}">Alumni</a></nav>
+<div class="prose professor-profile"><div class="professor-intro">{{ lab.professor_intro_html }}</div>{% for section in lab.professor_navigation %}{{ lab.professor_sections[section.id] }}{% endfor %}</div>
