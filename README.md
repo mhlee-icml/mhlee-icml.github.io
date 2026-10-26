@@ -2,7 +2,7 @@
 
 Intelligent Control & Machine Learning Lab, Incheon National University.
 
-기존 al-folio를 제거하고 보존한 연구실 자료를 Academic Pages의 학술 사이트 구조에 연결한 Jekyll 사이트입니다. 2026-10-26 사용자가 Academic Pages 적용과 Jekyll 사용을 승인했습니다. 현재는 로컬 검토용 첫 시안이며 원격 배포는 하지 않았습니다.
+기존 al-folio를 제거하고 보존한 연구실 자료를 Academic Pages의 학술 사이트 구조에 연결한 Jekyll 사이트입니다. 2026-10-26 사용자가 Academic Pages 적용과 Jekyll 사용을 승인했습니다. 검토 후 사용자가 사진 추가와 홈페이지 배포를 요청했습니다. 공개 주소는 https://mhlee-icml.github.io/ 입니다.
 
 ## 현재 사이트와 실행
 
@@ -46,7 +46,9 @@ python scripts/site.py serve
 
 첫 시안은 이 로컬 빌드 경로로 검증했습니다. 전체 `bundle install`은 이 PC에서 완료하지 않았으며, 표준 설치에는 Ruby+Devkit 등 해당 플랫폼의 빌드 도구가 필요합니다. 현재 자동 검증은 원문·이미지 보존, 내부 링크 및 HTTP 응답을 포함합니다. 브라우저 자동 제어 연결을 사용할 수 없어 화면 캡처와 실제 브라우저 상호작용 검증은 수행하지 못했습니다.
 
-배포 워크플로와 배포 명령은 아직 추가하지 않았습니다. GitHub Pages에 배포할 때는 Python 데이터 생성까지 포함한 빌드 과정과 `_site/` 업로드가 필요합니다. 사용자가 배포를 요청하기 전에는 커밋·푸시·배포하지 않습니다.
+GitHub Pages 배포는 `.github/workflows/pages.yml`이 담당합니다. `main` 푸시 또는 Actions의 **Build and deploy ICML site → Run workflow**로 실행합니다. Ubuntu에서 Python 3.13, Ruby 3.3, Node.js 24를 준비하고 잠긴 Ruby 의존성을 설치한 뒤, 데이터 생성 → 슬라이드 동작 검사 → Jekyll production 빌드 → 콘텐츠·이미지·내부 링크 검사 → `_site/` 업로드 → 배포 순서로 진행합니다. 검사가 실패하면 배포하지 않으며 배포 작업은 `main`에서만 실행됩니다.
+
+저장소 **Settings → Pages → Build and deployment → Source**는 **GitHub Actions**를 사용해야 합니다. `github-pages` 환경의 배포 규칙도 `main`을 허용해야 합니다. 게시 완료 여부는 Actions의 배포 성공과 공개 페이지 응답으로 확인합니다. 로컬 도구·캐시·생성 파일은 Git에 포함하지 않습니다. 이후 커밋·푸시·배포도 사용자의 요청 범위에서 진행합니다.
 
 ## 수정 위치와 검증
 
@@ -73,10 +75,10 @@ python scripts/site.py serve
 | [content/news/](content/news/) | KAIST Mobility Challenge 대상 브릿지경제 보도와 RoboCup 2026 SML 우승 중앙일보 보도 |
 | [content/videos.json](content/videos.json) | 연구 영상 3개의 YouTube 주소·제목·캡션 |
 | [content/platforms.json](content/platforms.json) | 홈 연구 플랫폼 5개의 사진·설명·기술 또는 연구 분야·영상 이동 링크와 제공 원문·근거 |
-| [assets/img/](assets/img/) | 연구실 사진·로고·연구 도표·포스터 원본 27개 |
+| [assets/img/](assets/img/) | 연구실 사진·로고·연구 도표·포스터 원본 28개 |
 | [content/inventory.json](content/inventory.json) | 원본·새 경로, SHA-256, 제거 분류와 확인 사항 |
 
-기존 이미지 17개는 이름·경로·파일 내용이 원본과 동일합니다. 새로 제공된 `yh_kim.jpg`, `ys_jang.jpg`, 연구 사진 5개, RoboCup 우승 사진 1개와 새 로고 2개는 파일 내용을 변경하지 않고 `assets/img/`로 옮겨 현재 이미지가 27개입니다. 기존 연구실 로고 `icmllogo.png`, 행사 사진 `kaistimg.png`, 한국어 연구 포스터 `labhomepage.png`도 원본 그대로 보존합니다. 시현의 소개 원본 1개를 유지하고, 사용자가 삭제한 우진·다인·기현의 소개와 사진은 구성원 목록에서도 제외했습니다.
+기존 이미지 17개는 이름·경로·파일 내용이 원본과 동일합니다. 새로 제공된 `yh_kim.jpg`, `ys_jang.jpg`, `sh_kil.png`, 연구 사진 5개, RoboCup 우승 사진 1개와 새 로고 2개는 파일 내용을 변경하지 않고 `assets/img/`로 옮겨 현재 이미지가 28개입니다. 기존 연구실 로고 `icmllogo.png`, 행사 사진 `kaistimg.png`, 한국어 연구 포스터 `labhomepage.png`도 원본 그대로 보존합니다. 시현의 소개 원본 1개를 유지하고, 사용자가 삭제한 우진·다인·기현의 소개와 사진은 구성원 목록에서도 제외했습니다.
 
 사이드바에는 사용자가 최종 선택한 네이비 배경 가로형 로고 `icml-logo-wide-dark.png`를 사용합니다. 원래 파일명은 `네이비 배경의 ICML LAB 로봇 로고.png`이며 1774×887 원본을 이름만 바꿔 저장했습니다. 앞서 저장한 흰색 정사각형 로고 `icml-logo-square-light.png`(원래 파일명 `중앙 정렬 ICML LAB 로봇 로고-3.png`, 1254×1254)도 유지하여 새 로고 원본은 총 2개입니다. 기존 `icmllogo.png` 역시 덮어쓰지 않습니다. 현재 표시에는 최종 선택을 적용하고 이전 선택·저장 요청은 `content/inventory.json`의 과거 기록으로 보존합니다.
 
@@ -92,7 +94,7 @@ ERP-42와 Smart Stroller의 두 문장 설명과 **Core technology**는 사용�
 
 교수·연구 소개는 글과 의미 있는 HTML 구조를 유지하면서 테마의 CSS, 클래스, Liquid 표현식과 표시 설정을 제거했습니다. 이미지 경로와 대체 텍스트, 이메일 링크, 모든 문구와 목록 순서를 보존했습니다. 홈 본문은 원래 비어 있었으며 연구실 전체 명칭과 홈 이미지 연결은 `site.json`에 있습니다.
 
-사용자 확인에 따라 학부연구생은 **김예훈 → 길순형 → 장윤서** 순서의 현재 참여 구성원(`status: current`)입니다. 김예훈·길순형은 전기공학과(Department of Electrical Engineering), 장윤서는 임베디드 시스템 공학과(Department of Embedded Systems Engineering)로 표시합니다. 김예훈은 `yh_kim.jpg`와 `content/people/about_yh_kim.md`를 연결했습니다. 장윤서는 `ys_jang.jpg`와 `content/people/about_ys_jang.md`에 이메일 `jyoonseo45@gmail.com`, 관심분야 Robot Control / Robot Manipulators / Robot Path Planning을 연결했습니다. 길순형은 `content/people/about_sh_kil.md`에 이메일 `kilsh1210@inu.ac.kr`, 관심분야 Drone Swarm Control / Reinforcement Learning을 연결했습니다. 길순형의 사진은 아직 받지 않아 `image: null`로 두고 화면에는 이름의 첫 글자를 사용합니다. 모든 프로필 이메일은 클릭 가능한 메일 링크입니다. 졸업생의 기존 연결은 유지합니다.
+사용자 확인에 따라 학부연구생은 **김예훈 → 길순형 → 장윤서** 순서의 현재 참여 구성원(`status: current`)입니다. 김예훈·길순형은 전기공학과(Department of Electrical Engineering), 장윤서는 임베디드 시스템 공학과(Department of Embedded Systems Engineering)로 표시합니다. 김예훈은 `yh_kim.jpg`와 `content/people/about_yh_kim.md`를 연결했습니다. 장윤서는 `ys_jang.jpg`와 `content/people/about_ys_jang.md`에 이메일 `jyoonseo45@gmail.com`, 관심분야 Robot Control / Robot Manipulators / Robot Path Planning을 연결했습니다. 길순형은 `content/people/about_sh_kil.md`에 이메일 `kilsh1210@inu.ac.kr`, 관심분야 Drone Swarm Control / Reinforcement Learning을 연결했습니다. 길순형의 사진은 사용자 제공 파일 `자연스러운 고해상도 인물 사진 복원.png`를 원본 내용 그대로 `sh_kil.png`로 정리해 연결했습니다. 다른 구성원과 같은 크기와 4:5 표시 비율을 사용합니다. 모든 프로필 이메일은 클릭 가능한 메일 링크입니다. 졸업생의 기존 연결은 유지합니다.
 
 Join Us는 **대학원 진학(석사·박사과정)과 학부연구 참여**를 함께 안내하는 한국어 모집·홍보 페이지입니다. 연구 분야, 실제 로봇 사진, 연구 영상·논문·구성원 링크, 교수님 이메일 `mh.lee@inu.ac.kr` 문의 버튼을 제공합니다. 자기소개·관심 분야·진학 또는 참여 희망 시기는 문의 시 참고 안내이며 별도 성적 기준, 모집 마감일, 지원금이나 합류 일정을 임의로 정하지 않았습니다. 모집 안내는 `content/pages/join-us.md`에서 수정합니다.
 

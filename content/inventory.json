@@ -751,6 +751,28 @@
         "news": 2,
         "videos": 3
       }
+    },
+    {
+      "date": "2026-10-26",
+      "reason": "User supplied a portrait for current undergraduate researcher 길순형 and requested publication of the updated lab website.",
+      "image": {
+        "original_path": "자연스러운 고해상도 인물 사진 복원.png",
+        "path": "assets/img/sh_kil.png",
+        "bytes": 1813204,
+        "sha256": "f45b15a99c1ab1f1087c4abf76f402edc1ca0d7550114fea9165ceaad4cc8b35",
+        "width": 1120,
+        "height": 1404
+      },
+      "person": "길순형",
+      "profile_image": "/assets/img/sh_kil.png",
+      "note": "Renamed and moved without changing image bytes. Uses the shared 4:5 portrait display size. Name, department, research interests, email and member order remain unchanged.",
+      "current_counts": {
+        "images": 28,
+        "biographies": 4,
+        "registered_people": 4,
+        "news": 2,
+        "videos": 3
+      }
     }
   ]
 }
