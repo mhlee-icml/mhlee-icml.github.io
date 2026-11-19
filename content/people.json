@@ -46,6 +46,7 @@
     "role": "Undergraduate Researcher",
     "status": "current",
     "department": "Department of Computer Science and Engineering",
+    "department_ko": "컴퓨터공학과",
     "image": "/assets/img/jadahk.png",
     "biography": "content/people/about_jadahk.md"
   },

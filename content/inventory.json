@@ -861,6 +861,18 @@
         "news": 2,
         "videos": 3
       }
+    },
+    {
+      "date": "2026-11-19",
+      "reason": "User requested the Korean department name alongside English, matching other students, and storage of the portrait in the image directory.",
+      "person": "Jang Dong Hyeok",
+      "department_ko": "컴퓨터공학과",
+      "image": {
+        "path": "assets/img/jadahk.png",
+        "bytes": 150918,
+        "sha256": "4122a6f6b8774c22ebef84ab69717f8841d32cb4081146f38e8d0cc387daac1b"
+      },
+      "note": "The tracked portrait already uses assets/img/jadahk.png. Removed only the byte-identical untracked root image.png copy after verification; original portrait bytes remain preserved at the profile image path. Other member details and ordering are unchanged."
     }
   ]
 }
