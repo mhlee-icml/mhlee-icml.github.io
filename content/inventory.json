@@ -825,6 +825,42 @@
         "news": 2,
         "videos": 3
       }
+    },
+    {
+      "date": "2026-11-19",
+      "reason": "User supplied a portrait, email, department and research interests, then confirmed Jang dong hyeok as an undergraduate researcher.",
+      "person": "Jang Dong Hyeok",
+      "provided_name": "Jang dong hyeok",
+      "group": "undergraduate",
+      "role": "Undergraduate Researcher",
+      "status": "current",
+      "department": "Department of Computer Science and Engineering",
+      "biography": "content/people/about_jadahk.md",
+      "email": "jadahk@inu.ac.kr",
+      "research_interests": [
+        "Autonomous Driving",
+        "Reinforcement Learning",
+        "Sim-to-Real"
+      ],
+      "image": {
+        "original_path": "image.png",
+        "path": "assets/img/jadahk.png",
+        "bytes": 150918,
+        "sha256": "4122a6f6b8774c22ebef84ab69717f8841d32cb4081146f38e8d0cc387daac1b",
+        "width": 344,
+        "height": 443
+      },
+      "note": "Original portrait bytes preserved. Display name capitalization normalized; no Korean spelling inferred. Appended after existing undergraduate researchers, using the shared 4:5 portrait display size. Existing member connections and order are unchanged.",
+      "current_counts": {
+        "images": 30,
+        "biographies": 6,
+        "registered_people": 6,
+        "graduate_students": 1,
+        "undergraduate_researchers": 4,
+        "alumni": 1,
+        "news": 2,
+        "videos": 3
+      }
     }
   ]
 }

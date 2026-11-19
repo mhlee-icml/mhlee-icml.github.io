@@ -41,6 +41,15 @@
     "biography": "content/people/about_ys_jang.md"
   },
   {
+    "group": "undergraduate",
+    "name": "Jang Dong Hyeok",
+    "role": "Undergraduate Researcher",
+    "status": "current",
+    "department": "Department of Computer Science and Engineering",
+    "image": "/assets/img/jadahk.png",
+    "biography": "content/people/about_jadahk.md"
+  },
+  {
     "group": "alumni",
     "name": "김 시 현 / Sihyun Kim",
     "source_name_html": "<p>&#xAE40; &#xC2DC; &#xD604; / Sihyun Kim</p>",

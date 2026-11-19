@@ -57,6 +57,7 @@ GitHub Pages 배포는 `.github/workflows/pages.yml`이 담당합니다. `main` 
 - 화면 구성: `_layouts/`, 공통 메뉴·사이드바·푸터: `_includes/`
 - 메뉴: `_data/navigation.yml`, 스타일: `assets/css/lab.css`, 동작: `assets/js/lab.js`
 - 프로필 사진: 교수·학생·졸업생과 사진 없는 자리 모두 데스크톱 180×225px, 600px 이하 화면 120×150px로 통일합니다. 교수 상세 페이지도 같은 규격을 사용하며 사진 원본은 수정하지 않습니다.
+- 대학원생 카드: 데스크톱에서 아래 학부연구생 카드 두 칸과 사이 간격을 합한 너비에 맞춥니다. 김형진의 관심분야는 항목별로 줄을 나누고 문단 간격을 줄여 사진 높이에 맞게 정리합니다. 600px 이하에서는 모두 한 열로 표시합니다.
 - 자동 생성물: `_data/lab.json`, `_pages/`, `_site/` — 직접 수정하지 않습니다.
 - 검사: 원본 파일 해시, 논문 30개와 대표 논문 6개, 연구 이미지 10개, 구성원·영상·뉴스 연결, 생성된 페이지의 내부 링크와 앵커, 본문·이미지 보존을 확인합니다.
 
@@ -70,15 +71,15 @@ GitHub Pages 배포는 `.github/workflows/pages.yml`이 담당합니다. `main` 
 | [content/pages/professor.md](content/pages/professor.md) | 교수 소개, 학력·경력·강의·과제·논문·특허·학술활동·수상 원문 |
 | [content/pages/research-fields.md](content/pages/research-fields.md) | 연구 분야 3개, 설명과 연구 이미지 10개의 연결 |
 | [content/pages/join-us.md](content/pages/join-us.md) | 대학원 진학·학부연구 참여 모집과 연구실 홍보, 교수 이메일 문의 안내 |
-| [content/people.json](content/people.json) | 현재 대학원생 1명·학부연구생 3명과 졸업생 1명의 이름·소속·사진·소개 연결 |
-| [content/people/](content/people/) | 김형진·김예훈·길순형·장윤서 소개 각 1개와 졸업생 소개 1개 |
+| [content/people.json](content/people.json) | 현재 대학원생 1명·학부연구생 4명과 졸업생 1명의 이름·소속·사진·소개 연결 |
+| [content/people/](content/people/) | 김형진·김예훈·길순형·장윤서·Jang Dong Hyeok 소개 각 1개와 졸업생 소개 1개, 총 6개 |
 | [content/news/](content/news/) | KAIST Mobility Challenge 대상 브릿지경제 보도와 RoboCup 2026 SML 우승 중앙일보 보도 |
 | [content/videos.json](content/videos.json) | 연구 영상 3개의 YouTube 주소·제목·캡션 |
 | [content/platforms.json](content/platforms.json) | 홈 연구 플랫폼 5개의 사진·설명·기술 또는 연구 분야·영상 이동 링크와 제공 원문·근거 |
-| [assets/img/](assets/img/) | 연구실 사진·로고·연구 도표·포스터 원본 29개 |
+| [assets/img/](assets/img/) | 연구실 사진·로고·연구 도표·포스터 원본 30개 |
 | [content/inventory.json](content/inventory.json) | 원본·새 경로, SHA-256, 제거 분류와 확인 사항 |
 
-기존 이미지 17개는 이름·경로·파일 내용이 원본과 동일합니다. 새로 제공된 `yh_kim.jpg`, `ys_jang.jpg`, `sh_kil.png`, `hj_kim.jpg`, 연구 사진 5개, RoboCup 우승 사진 1개와 새 로고 2개는 파일 내용을 변경하지 않고 `assets/img/`로 옮겨 현재 이미지가 29개입니다. 기존 연구실 로고 `icmllogo.png`, 행사 사진 `kaistimg.png`, 한국어 연구 포스터 `labhomepage.png`도 원본 그대로 보존합니다. 시현의 소개 원본 1개를 유지하고, 사용자가 삭제한 우진·다인·기현의 소개와 사진은 구성원 목록에서도 제외했습니다.
+기존 이미지 17개는 이름·경로·파일 내용이 원본과 동일합니다. 새로 제공된 `yh_kim.jpg`, `ys_jang.jpg`, `sh_kil.png`, `hj_kim.jpg`, `jadahk.png`, 연구 사진 5개, RoboCup 우승 사진 1개와 새 로고 2개는 파일 내용을 변경하지 않고 `assets/img/`에 저장해 현재 이미지가 30개입니다. 기존 연구실 로고 `icmllogo.png`, 행사 사진 `kaistimg.png`, 한국어 연구 포스터 `labhomepage.png`도 원본 그대로 보존합니다. 시현의 소개 원본 1개를 유지하고, 사용자가 삭제한 우진·다인·기현의 소개와 사진은 구성원 목록에서도 제외했습니다.
 
 사이드바에는 사용자가 최종 선택한 네이비 배경 가로형 로고 `icml-logo-wide-dark.png`를 사용합니다. 원래 파일명은 `네이비 배경의 ICML LAB 로봇 로고.png`이며 1774×887 원본을 이름만 바꿔 저장했습니다. 앞서 저장한 흰색 정사각형 로고 `icml-logo-square-light.png`(원래 파일명 `중앙 정렬 ICML LAB 로봇 로고-3.png`, 1254×1254)도 유지하여 새 로고 원본은 총 2개입니다. 기존 `icmllogo.png` 역시 덮어쓰지 않습니다. 현재 표시에는 최종 선택을 적용하고 이전 선택·저장 요청은 `content/inventory.json`의 과거 기록으로 보존합니다.
 
@@ -96,7 +97,9 @@ ERP-42와 Smart Stroller의 두 문장 설명과 **Core technology**는 사용�
 
 김형진 / Hyeongjin Kim은 **Graduate students** 구역의 **Integrated M.S.–Ph.D. Student**로 표시합니다. 소속은 **Hanyang University · Department of Electrical Engineering**, 공개 이메일은 `ky942400@hanyang.ac.kr`, 연구 관심분야는 Reinforcement Learning / Intelligent Manipulation / Intelligent Robotics입니다. 소개 원본은 `content/people/about_hj_kim.md`이며 추가된 `author.jpg` 사진을 원본 내용 그대로 `hj_kim.jpg`로 정리해 연결했습니다. 다른 구성원과 같은 크기와 4:5 표시 비율을 사용합니다. 대학원생 구역은 교수 소개 다음, 학부연구생 구역 앞에 배치합니다.
 
-사용자 확인에 따라 학부연구생은 **김예훈 → 길순형 → 장윤서** 순서의 현재 참여 구성원(`status: current`)입니다. 김예훈·길순형은 전기공학과(Department of Electrical Engineering), 장윤서는 임베디드 시스템 공학과(Department of Embedded Systems Engineering)로 표시합니다. 김예훈은 `yh_kim.jpg`와 `content/people/about_yh_kim.md`를 연결했습니다. 장윤서는 `ys_jang.jpg`와 `content/people/about_ys_jang.md`에 이메일 `jyoonseo45@gmail.com`, 관심분야 Robot Control / Robot Manipulators / Robot Path Planning을 연결했습니다. 길순형은 `content/people/about_sh_kil.md`에 이메일 `kilsh1210@inu.ac.kr`, 관심분야 Drone Swarm Control / Reinforcement Learning을 연결했습니다. 길순형의 사진은 사용자 제공 파일 `자연스러운 고해상도 인물 사진 복원.png`를 원본 내용 그대로 `sh_kil.png`로 정리해 연결했습니다. 다른 구성원과 같은 크기와 4:5 표시 비율을 사용합니다. 모든 프로필 이메일은 클릭 가능한 메일 링크입니다. 졸업생의 기존 연결은 유지합니다.
+사용자 확인에 따라 학부연구생은 **김예훈 → 길순형 → 장윤서 → Jang Dong Hyeok** 순서의 현재 참여 구성원(`status: current`)입니다. 김예훈·길순형은 전기공학과(Department of Electrical Engineering), 장윤서는 임베디드 시스템 공학과(Department of Embedded Systems Engineering)로 표시합니다. 김예훈은 `yh_kim.jpg`와 `content/people/about_yh_kim.md`를 연결했습니다. 장윤서는 `ys_jang.jpg`와 `content/people/about_ys_jang.md`에 이메일 `jyoonseo45@gmail.com`, 관심분야 Robot Control / Robot Manipulators / Robot Path Planning을 연결했습니다. 길순형은 `content/people/about_sh_kil.md`에 이메일 `kilsh1210@inu.ac.kr`, 관심분야 Drone Swarm Control / Reinforcement Learning을 연결했습니다. 길순형의 사진은 사용자 제공 파일 `자연스러운 고해상도 인물 사진 복원.png`를 원본 내용 그대로 `sh_kil.png`로 정리해 연결했습니다. 다른 구성원과 같은 크기와 4:5 표시 비율을 사용합니다. 모든 프로필 이메일은 클릭 가능한 메일 링크입니다. 졸업생의 기존 연결은 유지합니다.
+
+2026-11-19 추가한 **Jang Dong Hyeok**은 **Undergraduate Researcher**, 소속은 **Department of Computer Science and Engineering**으로 표시합니다. 공개 이메일은 `jadahk@inu.ac.kr`, 연구 관심분야는 Autonomous Driving / Reinforcement Learning / Sim-to-Real입니다. 소개는 `content/people/about_jadahk.md`에 저장하고, 사용자 제공 `image.png`는 원본 바이트를 보존해 `assets/img/jadahk.png`로 복사했습니다. 영문명은 제공된 철자를 유지하며 대문자만 정리했고, 기존 구성원과 같은 4:5 사진 규격을 사용합니다.
 
 Join Us는 **대학원 진학(석사·박사과정)과 학부연구 참여**를 함께 안내하는 한국어 모집·홍보 페이지입니다. 연구 분야, 실제 로봇 사진, 연구 영상·논문·구성원 링크, 교수님 이메일 `mh.lee@inu.ac.kr` 문의 버튼을 제공합니다. 자기소개·관심 분야·진학 또는 참여 희망 시기는 문의 시 참고 안내이며 별도 성적 기준, 모집 마감일, 지원금이나 합류 일정을 임의로 정하지 않았습니다. 모집 안내는 `content/pages/join-us.md`에서 수정합니다.
 

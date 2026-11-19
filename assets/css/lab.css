@@ -251,6 +251,12 @@ button, a { touch-action: manipulation; }
 .undergraduate-grid .person-card .prose p { font-size: 12px; line-height: 1.8; margin-bottom: 9px; }
 .undergraduate-grid .person-card a { overflow-wrap: anywhere; }
 .people-grid .person-card { grid-column: 1 / -1; max-width: 600px; }
+/* Keep graduate cards aligned with two undergraduate columns, including the gap. */
+.graduate-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+.people-grid.graduate-grid .person-card { grid-column: span 2; max-width: none; min-width: 0; padding: 18px; gap: 18px; }
+.graduate-grid .person-card h3 { margin-bottom: 6px; }
+.graduate-grid .person-card p { margin-bottom: 4px; line-height: 1.5; }
+.graduate-grid .person-card .prose p:last-child { margin-bottom: 0; }
 .people-section { margin-bottom: 38px; }
 .home-join + .people-section { margin-top: 40px; }
 .people-section > h2 { font-size: 21px; letter-spacing: -.3px; margin-bottom: 20px; }
@@ -450,6 +456,8 @@ button, a { touch-action: manipulation; }
   .hero-project-copy { padding: 22px; }
   .home-join + .people-section { margin-top: 32px; }
   .people-grid { grid-template-columns: 1fr; gap: 18px; }
+  .graduate-grid, .undergraduate-grid { grid-template-columns: 1fr; }
+  .people-grid.graduate-grid .person-card { grid-column: 1 / -1; padding: 14px; }
   .person-card,
   .people-grid.undergraduate-grid .person-card,
   .people-section .professor-card { flex-direction: row; align-items: flex-start; flex-wrap: nowrap; padding: 14px; gap: 18px; }
