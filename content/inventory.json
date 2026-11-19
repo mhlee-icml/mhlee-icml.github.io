@@ -873,6 +873,45 @@
         "sha256": "4122a6f6b8774c22ebef84ab69717f8841d32cb4081146f38e8d0cc387daac1b"
       },
       "note": "The tracked portrait already uses assets/img/jadahk.png. Removed only the byte-identical untracked root image.png copy after verification; original portrait bytes remain preserved at the profile image path. Other member details and ordering are unchanged."
+    },
+    {
+      "date": "2026-11-19",
+      "reason": "User requested the exact co-advisor affiliation line for Hyeongjin Kim and restoration of Woojin Jeong as a 2026 undergraduate alumnus, then confirmed AeiROBOT and Robot Deployment in English.",
+      "graduate_profile_update": {
+        "person": "김형진 / Hyeongjin Kim",
+        "previous_institution_display": "Hanyang University",
+        "institution_display": "Co-Advisor : Jun Moon, Hanyang University",
+        "note": "Department, degree program, email, research interests, portrait and compact card layout remain unchanged."
+      },
+      "alumnus": {
+        "person": "정우진 / Woojin Jeong",
+        "group": "alumni",
+        "graduation": "Bachelor's Course (2026)",
+        "department": "Department of Electrical Engineering",
+        "company": "AeiROBOT",
+        "position": "Robot Deployment",
+        "employment_source": "User-confirmed company and position; English display requested.",
+        "company_spelling_reference": "https://www.arobot4all.com/",
+        "biography": "content/people/about_woo.md",
+        "image": {
+          "source_commit": "3bbc154ef9835c5c67253086c605d54a236875b2",
+          "path": "assets/img/woo.jpg",
+          "bytes": 386802,
+          "sha256": "c10db5a26ab8d0bfa70929c6b5216fb1cb7069b8b420bb4bf8e83d7d0ab28028"
+        }
+      },
+      "supersedes": "The user's earlier removal of Woojin is superseded only for this explicit alumni registration and original portrait restoration. Dain and Gyun remain removed. The former master's-course biography is not restored.",
+      "note": "Appended after Sihyun Kim with the same alumni biography format and shared portrait size. Existing member order, other biographies and image bytes are preserved.",
+      "current_counts": {
+        "images": 31,
+        "biographies": 7,
+        "registered_people": 7,
+        "graduate_students": 1,
+        "undergraduate_researchers": 4,
+        "alumni": 2,
+        "news": 2,
+        "videos": 3
+      }
     }
   ]
 }

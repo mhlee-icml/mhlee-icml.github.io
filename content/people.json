@@ -4,7 +4,7 @@
     "name": "김형진 / Hyeongjin Kim",
     "role": "Integrated M.S.–Ph.D. Student",
     "status": "current",
-    "institution": "Hanyang University",
+    "institution": "Co-Advisor : Jun Moon, Hanyang University",
     "department": "Department of Electrical Engineering",
     "department_ko": "전기공학과",
     "image": "/assets/img/hj_kim.jpg",
@@ -56,5 +56,11 @@
     "source_name_html": "<p>&#xAE40; &#xC2DC; &#xD604; / Sihyun Kim</p>",
     "image": "/assets/img/sihyun.jpg",
     "biography": "content/people/about_sihyun.md"
+  },
+  {
+    "group": "alumni",
+    "name": "정우진 / Woojin Jeong",
+    "image": "/assets/img/woo.jpg",
+    "biography": "content/people/about_woo.md"
   }
 ]
