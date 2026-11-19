@@ -15,4 +15,4 @@ layout: default
 <aside class="home-join"><div><p class="eyebrow">JOIN ICML</p><h2>Interested in joining our lab?</h2><p>Explore graduate study and undergraduate research opportunities.</p></div><a class="button-link" href="{{ '/join-us/' | relative_url }}">Join Us →</a></aside>
 {% endunless %}
 {% assign alumni = lab.people | where: 'group', 'alumni' %}
-{% if alumni.size > 0 %}<section class="people-section"><h2>Alumni</h2><div class="people-grid">{% for person in alumni %}{% include person.html person=person %}{% endfor %}</div></section>{% endif %}
+{% if alumni.size > 0 %}<section class="people-section"><h2>Alumni</h2><div class="people-grid alumni-grid">{% for person in alumni %}{% include person.html person=person %}{% endfor %}</div></section>{% endif %}
